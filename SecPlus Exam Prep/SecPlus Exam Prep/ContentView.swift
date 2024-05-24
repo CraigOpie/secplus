@@ -103,6 +103,82 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    var quizView: some View {
+        VStack(spacing: 20) {
+            HStack {
+                ProgressBar(progress: Double(currentQuestionIndex) / Double(questions.count))
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.85)
+
+                Spacer(minLength: 10)
+
+                Button(action: {
+                    self.showMenu = true
+                    self.retryQuiz()
+                }) {
+                    Image(systemName: "xmark")
+                        .padding(10)
+                        .background(colorScheme == .dark ? Color.black : Color.white)
+                        .foregroundColor(.primary)
+                        .clipShape(Circle())
+                }
+                .buttonStyle(MagicButtonEffect())
+            }
+
+            if !questions.isEmpty {
+                Text(questions[currentQuestionIndex].question)
+                    .padding()
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(10)
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.primary)
+
+                ForEach(questions[currentQuestionIndex].allOptions, id: \.self) { option in
+                    Button(action: {
+                        if !hasCheckedAnswer {
+                            if selectedAnswers.contains(option) {
+                                selectedAnswers.remove(option)
+                            } else {
+                                selectedAnswers.insert(option)
+                            }
+                        }
+                    }) {
+                        Text(option)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(buttonColor(for: option))
+                            .foregroundColor(.primary)
+                            .overlay(correctBorder(for: option))
+                            .cornerRadius(10)
+                            .blur(radius: shouldBlur(option: option) ? 5 : 0)
+                    }
+                    .buttonStyle(MagicButtonEffect())
+                }
+
+                Spacer()
+
+                Button(action: {
+                    if hasCheckedAnswer {
+                        moveToNextQuestion()
+                    } else {
+                        checkAnswer()
+                    }
+                }) {
+                    Text(hasCheckedAnswer ? "Next Question" : "Submit")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(!selectedAnswers.isEmpty ? Color.green : Color.gray)
+                        .foregroundColor(.primary)
+                        .cornerRadius(10)
+                }
+                .buttonStyle(MagicButtonEffect())
+                .disabled(selectedAnswers.isEmpty)
+                .padding(.bottom, 20)
+            }
+        }
+        .padding()
+        .onAppear(perform: loadQuestions)
+    }
 }
 
 struct MagicButtonEffect: ButtonStyle {
