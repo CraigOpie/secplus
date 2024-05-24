@@ -112,7 +112,7 @@ struct ContentView: View {
         VStack(spacing: 20) {
             HStack {
                 ProgressBar(progress: Double(currentQuestionIndex) / Double(questions.count))
-                    .frame(maxWidth: UIScreen.main.bounds.width * 0.85)
+                    .frame(maxWidth: maxWidth())
 
                 Spacer(minLength: 10)
 
@@ -182,6 +182,18 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: loadQuestions)
+    }
+    
+    func maxWidth() -> CGFloat {
+        #if os(iOS)
+        return UIScreen.main.bounds.width * 0.85
+        #else
+        if let screen = NSScreen.main {
+            return screen.visibleFrame.width * 0.85
+        } else {
+            return 1080
+        }
+        #endif
     }
     
     func loadQuestions() {
