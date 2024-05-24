@@ -21,7 +21,7 @@ struct ContentView: View {
     @State private var showMenu = true
     @State private var hasCheckedAnswer = false
     @Environment(\.colorScheme) var colorScheme
-
+    
     var body: some View {
         if showMenu {
             menuView
@@ -38,9 +38,9 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .padding(.top, 50)
-
+            
             Spacer()
-
+            
             Button(action: {
                 self.mode = .study
                 self.showMenu = false
@@ -54,7 +54,7 @@ struct ContentView: View {
                     .cornerRadius(10)
             }
             .buttonStyle(MagicButtonEffect())
-
+            
             Button(action: {
                 self.mode = .exam
                 self.showMenu = false
@@ -68,8 +68,38 @@ struct ContentView: View {
                     .cornerRadius(10)
             }
             .buttonStyle(MagicButtonEffect())
-
+            
             Spacer()
+        }
+        .padding()
+    }
+    
+    var resultView: some View {
+        VStack(spacing: 30) {
+            Text(correctAnswers >= (questions.count / 10 * 8) ? "Pass" : "Fail")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Performance Breakdown")
+                    .font(.title2)
+
+                Text("Percentage Correct: \(Int(Double(correctAnswers) / Double(questions.count) * 100))%")
+                Text("Questions Correct: \(correctAnswers)")
+                Text("Questions Incorrect: \(questions.count - correctAnswers)")
+            }
+            .padding()
+            .background(Color.gray.opacity(0.1))
+            .cornerRadius(10)
+
+            Button(action: retryQuiz) {
+                Text("Retry")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.primary)
+                    .cornerRadius(10)
+            }
+            .buttonStyle(MagicButtonEffect())
         }
         .padding()
     }
