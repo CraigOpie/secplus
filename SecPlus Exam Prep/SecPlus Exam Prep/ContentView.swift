@@ -26,6 +26,48 @@ struct ContentView: View {
         // Placeholder content
         Text("ContentView")
     }
+    
+    var menuView: some View {
+        VStack(spacing: 30) {
+            Text("SecPlus Practice Exam")
+                .multilineTextAlignment(.center)
+                .font(.title)
+                .padding(.top, 50)
+
+            Spacer()
+
+            Button(action: {
+                self.mode = .study
+                self.showMenu = false
+                self.loadQuestions()
+            }) {
+                Text("Study Mode")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .foregroundColor(.primary)
+                    .cornerRadius(10)
+            }
+            .buttonStyle(MagicButtonEffect())
+
+            Button(action: {
+                self.mode = .exam
+                self.showMenu = false
+                self.loadQuestions()
+            }) {
+                Text("Exam Mode")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .foregroundColor(.primary)
+                    .cornerRadius(10)
+            }
+            .buttonStyle(MagicButtonEffect())
+
+            Spacer()
+        }
+        .padding()
+    }
 }
 
 #Preview {
