@@ -23,8 +23,13 @@ struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
-        // Placeholder content
-        Text("ContentView")
+        if showMenu {
+            menuView
+        } else if showResult {
+            resultView
+        } else {
+            quizView
+        }
     }
     
     var menuView: some View {
