@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBFABAFD2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */; };
+		BBFABAFF2C0147CC002E4CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */; };
+		BBFABB012C0147CC002E4CF6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB002C0147CC002E4CF6 /* Item.swift */; };
+		BBFABB032C0147CD002E4CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFABB022C0147CD002E4CF6 /* Assets.xcassets */; };
+		BBFABB072C0147CD002E4CF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFABB062C0147CD002E4CF6 /* Preview Assets.xcassets */; };
+		BBFABB112C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB102C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift */; };
+		BBFABB1B2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB1A2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift */; };
+		BBFABB1D2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB1C2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBFABB0D2C0147CD002E4CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBFABAF12C0147CC002E4CF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBFABAF82C0147CC002E4CF6;
+			remoteInfo = "SecPlus Exam Prep";
+		};
+		BBFABB172C0147CD002E4CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBFABAF12C0147CC002E4CF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBFABAF82C0147CC002E4CF6;
+			remoteInfo = "SecPlus Exam Prep";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBFABAF92C0147CC002E4CF6 /* SecPlus Exam Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SecPlus Exam Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepApp.swift; sourceTree = "<group>"; };
+		BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBFABB002C0147CC002E4CF6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BBFABB022C0147CD002E4CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBFABB042C0147CD002E4CF6 /* SecPlus_Exam_Prep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecPlus_Exam_Prep.entitlements; sourceTree = "<group>"; };
+		BBFABB062C0147CD002E4CF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBFABB0C2C0147CD002E4CF6 /* SecPlus Exam PrepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecPlus Exam PrepTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFABB102C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepTests.swift; sourceTree = "<group>"; };
+		BBFABB162C0147CD002E4CF6 /* SecPlus Exam PrepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecPlus Exam PrepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFABB1A2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepUITests.swift; sourceTree = "<group>"; };
+		BBFABB1C2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBFABAF62C0147CC002E4CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFABB092C0147CD002E4CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFABB132C0147CD002E4CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBFABAF02C0147CC002E4CF6 = {
+			isa = PBXGroup;
+			children = (
+				BBFABAFB2C0147CC002E4CF6 /* SecPlus Exam Prep */,
+				BBFABB0F2C0147CD002E4CF6 /* SecPlus Exam PrepTests */,
+				BBFABB192C0147CD002E4CF6 /* SecPlus Exam PrepUITests */,
+				BBFABAFA2C0147CC002E4CF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBFABAFA2C0147CC002E4CF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBFABAF92C0147CC002E4CF6 /* SecPlus Exam Prep.app */,
+				BBFABB0C2C0147CD002E4CF6 /* SecPlus Exam PrepTests.xctest */,
+				BBFABB162C0147CD002E4CF6 /* SecPlus Exam PrepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBFABAFB2C0147CC002E4CF6 /* SecPlus Exam Prep */ = {
+			isa = PBXGroup;
+			children = (
+				BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */,
+				BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */,
+				BBFABB002C0147CC002E4CF6 /* Item.swift */,
+				BBFABB022C0147CD002E4CF6 /* Assets.xcassets */,
+				BBFABB042C0147CD002E4CF6 /* SecPlus_Exam_Prep.entitlements */,
+				BBFABB052C0147CD002E4CF6 /* Preview Content */,
+			);
+			path = "SecPlus Exam Prep";
+			sourceTree = "<group>";
+		};
+		BBFABB052C0147CD002E4CF6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBFABB062C0147CD002E4CF6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBFABB0F2C0147CD002E4CF6 /* SecPlus Exam PrepTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBFABB102C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift */,
+			);
+			path = "SecPlus Exam PrepTests";
+			sourceTree = "<group>";
+		};
+		BBFABB192C0147CD002E4CF6 /* SecPlus Exam PrepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBFABB1A2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift */,
+				BBFABB1C2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift */,
+			);
+			path = "SecPlus Exam PrepUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBFABAF82C0147CC002E4CF6 /* SecPlus Exam Prep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFABB202C0147CD002E4CF6 /* Build configuration list for PBXNativeTarget "SecPlus Exam Prep" */;
+			buildPhases = (
+				BBFABAF52C0147CC002E4CF6 /* Sources */,
+				BBFABAF62C0147CC002E4CF6 /* Frameworks */,
+				BBFABAF72C0147CC002E4CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SecPlus Exam Prep";
+			productName = "SecPlus Exam Prep";
+			productReference = BBFABAF92C0147CC002E4CF6 /* SecPlus Exam Prep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBFABB0B2C0147CD002E4CF6 /* SecPlus Exam PrepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFABB232C0147CD002E4CF6 /* Build configuration list for PBXNativeTarget "SecPlus Exam PrepTests" */;
+			buildPhases = (
+				BBFABB082C0147CD002E4CF6 /* Sources */,
+				BBFABB092C0147CD002E4CF6 /* Frameworks */,
+				BBFABB0A2C0147CD002E4CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBFABB0E2C0147CD002E4CF6 /* PBXTargetDependency */,
+			);
+			name = "SecPlus Exam PrepTests";
+			productName = "SecPlus Exam PrepTests";
+			productReference = BBFABB0C2C0147CD002E4CF6 /* SecPlus Exam PrepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBFABB152C0147CD002E4CF6 /* SecPlus Exam PrepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFABB262C0147CD002E4CF6 /* Build configuration list for PBXNativeTarget "SecPlus Exam PrepUITests" */;
+			buildPhases = (
+				BBFABB122C0147CD002E4CF6 /* Sources */,
+				BBFABB132C0147CD002E4CF6 /* Frameworks */,
+				BBFABB142C0147CD002E4CF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBFABB182C0147CD002E4CF6 /* PBXTargetDependency */,
+			);
+			name = "SecPlus Exam PrepUITests";
+			productName = "SecPlus Exam PrepUITests";
+			productReference = BBFABB162C0147CD002E4CF6 /* SecPlus Exam PrepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBFABAF12C0147CC002E4CF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BBFABAF82C0147CC002E4CF6 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					BBFABB0B2C0147CD002E4CF6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BBFABAF82C0147CC002E4CF6;
+					};
+					BBFABB152C0147CD002E4CF6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BBFABAF82C0147CC002E4CF6;
+					};
+				};
+			};
+			buildConfigurationList = BBFABAF42C0147CC002E4CF6 /* Build configuration list for PBXProject "SecPlus Exam Prep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBFABAF02C0147CC002E4CF6;
+			productRefGroup = BBFABAFA2C0147CC002E4CF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBFABAF82C0147CC002E4CF6 /* SecPlus Exam Prep */,
+				BBFABB0B2C0147CD002E4CF6 /* SecPlus Exam PrepTests */,
+				BBFABB152C0147CD002E4CF6 /* SecPlus Exam PrepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBFABAF72C0147CC002E4CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFABB072C0147CD002E4CF6 /* Preview Assets.xcassets in Resources */,
+				BBFABB032C0147CD002E4CF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFABB0A2C0147CD002E4CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFABB142C0147CD002E4CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBFABAF52C0147CC002E4CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFABAFF2C0147CC002E4CF6 /* ContentView.swift in Sources */,
+				BBFABB012C0147CC002E4CF6 /* Item.swift in Sources */,
+				BBFABAFD2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFABB082C0147CD002E4CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFABB112C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFABB122C0147CD002E4CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFABB1D2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift in Sources */,
+				BBFABB1B2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBFABB0E2C0147CD002E4CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBFABAF82C0147CC002E4CF6 /* SecPlus Exam Prep */;
+			targetProxy = BBFABB0D2C0147CD002E4CF6 /* PBXContainerItemProxy */;
+		};
+		BBFABB182C0147CD002E4CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBFABAF82C0147CC002E4CF6 /* SecPlus Exam Prep */;
+			targetProxy = BBFABB172C0147CD002E4CF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BBFABB1E2C0147CD002E4CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBFABB1F2C0147CD002E4CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BBFABB212C0147CD002E4CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SecPlus Exam Prep/SecPlus_Exam_Prep.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecPlus Exam Prep/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsd.SecPlus-Exam-Prep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBFABB222C0147CD002E4CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SecPlus Exam Prep/SecPlus_Exam_Prep.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecPlus Exam Prep/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsd.SecPlus-Exam-Prep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BBFABB242C0147CD002E4CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsd.SecPlus-Exam-PrepTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecPlus Exam Prep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecPlus Exam Prep";
+			};
+			name = Debug;
+		};
+		BBFABB252C0147CD002E4CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsd.SecPlus-Exam-PrepTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecPlus Exam Prep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecPlus Exam Prep";
+			};
+			name = Release;
+		};
+		BBFABB272C0147CD002E4CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsd.SecPlus-Exam-PrepUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SecPlus Exam Prep";
+			};
+			name = Debug;
+		};
+		BBFABB282C0147CD002E4CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dsd.SecPlus-Exam-PrepUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SecPlus Exam Prep";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBFABAF42C0147CC002E4CF6 /* Build configuration list for PBXProject "SecPlus Exam Prep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFABB1E2C0147CD002E4CF6 /* Debug */,
+				BBFABB1F2C0147CD002E4CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFABB202C0147CD002E4CF6 /* Build configuration list for PBXNativeTarget "SecPlus Exam Prep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFABB212C0147CD002E4CF6 /* Debug */,
+				BBFABB222C0147CD002E4CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFABB232C0147CD002E4CF6 /* Build configuration list for PBXNativeTarget "SecPlus Exam PrepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFABB242C0147CD002E4CF6 /* Debug */,
+				BBFABB252C0147CD002E4CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFABB262C0147CD002E4CF6 /* Build configuration list for PBXNativeTarget "SecPlus Exam PrepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFABB272C0147CD002E4CF6 /* Debug */,
+				BBFABB282C0147CD002E4CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBFABAF12C0147CC002E4CF6 /* Project object */;
+}
