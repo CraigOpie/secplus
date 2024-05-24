@@ -1,0 +1,2770 @@
+[
+    {
+        "question": "A customer service representative reported an unusual text message that was sent to the help desk. The message contained an unrecognized invoice number with a large balance due and a link to click for more details. Which of the following BEST describes this technique?",
+        "answers": {
+            "correct": "Smishing",
+            "incorrect": ["Vishing", "Whaling", "Phishing"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following should be monitored by threat intelligence researchers who search for leaked credentials?",
+        "answers": {
+            "correct": "Dark web",
+            "incorrect": ["Common Weakness Enumeration", "OSINT", "Vulnerability databases"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Sales employees regularly utilize the same fantasy football website as other sales associates working for other companies. Which of the following attacks is the highest concern in this scenario?",
+        "answers": {
+            "correct": "Watering-hole attack",
+            "incorrect": ["Credential harvesting", "Hybrid warfare", "Pharming"]
+        },
+        "Explanation": "Watering-hole attack: involves attacking a 3rd party site in order to gain access to the real target."
+    },
+    {
+        "question": "Emily has received a suspicious email that claims she won a multi-million dollar sweepstake. The email instructs her to reply with her full name birthdate and home address so her identity can be validated before she is given the prize. What best describes this type of social engineering attack?",
+        "answers": {
+            "correct": "Phishing",
+            "incorrect": ["Vishing", "Whaling", "Spear phishing"]
+        },
+        "Explanation": "Since this attack came through email (A) is out. Since the attack wasn’t specifically crafted for Emily a group or upper management (C) and (D) are both out too."
+    },
+    {
+        "question": "An employee installed a new service on the domain controller without consent or approval from the IT department and change management. What specifically describes this type of threat?",
+        "answers": {
+            "correct": "Shadow IT",
+            "incorrect": ["OSINT", "Insider threat", "Dark web"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Chief Executive Officer's (CEO) personal information was stolen in a social engineering attack. Which of the following sources would reveal if the CEO's personal information is for sale?",
+        "answers": {
+            "correct": "The dark web",
+            "incorrect": ["Automated information sharing", "Open-source intelligence", "Vulnerability databases"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After a security assessment is concluded what benefit does the CVSS score provide to a company on the list of discovered vulnerabilities?",
+        "answers": {
+            "correct": "Prioritize remediation of vulnerabilities based on the possible impact.",
+            "incorrect": ["Validate the vulnerability exists in the organization’s network through penetration testing.", "Research the appropriate mitigation techniques in a vulnerability database.", "Find the software patches that are required to mitigate a vulnerability."]
+        },
+        "Explanation": "CVSS (Common Vulnerability Scoring System) is used to assign severity scores (zero to ten) to vulnerabilities which allows responders to prioritize the responses and better manage resources. Scores are calculated by a formula that uses several metrics including complexity and severity."
+    },
+    {
+        "question": "Which of the following would best describe the severity of a company’s vulnerabilities?",
+        "answers": {
+            "correct": "CVSS",
+            "incorrect": ["SIEM", "CVE", "SOAR"]
+        },
+        "Explanation": "The Common Vulnerability Scoring System (CVSS) provides a way to capture the principal characteristics of a vulnerability and produce a numerical score reflecting its severity."
+    },
+    {
+        "question": "After logging into a switch an admin retrieves the following information: Which of the following attacks is most likely occurring?",
+        "answers": {
+            "correct": "MAC flooding",
+            "incorrect": ["DNS poisoning", "MAC cloning", "ARP poisoning"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following should be disabled in order to improve security?",
+        "answers": {
+            "correct": "WPS",
+            "incorrect": ["WPA3", "AES", "RADIUS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Travis a penetration tester heard about a new vulnerability that affects many modern platforms. Which of the following would be BEST to consult in order to determine exactly which platforms have been affected?",
+        "answers": {
+            "correct": "CVE",
+            "incorrect": ["OSINT", "SIEM", "CVSS"]
+        },
+        "Explanation": "Notably we are asking about PLATFORMS here and not individual systems on a network. A platform is generally just the types of OSs that would be potentially compromised by this new vulnerability."
+    },
+    {
+        "question": "A webserver was recently overwhelmed by a sudden flood of SYN packets from multiple sources. Of the options below which best describes this attack?",
+        "answers": {
+            "correct": "Botnet",
+            "incorrect": ["Worm", "Virus", "RAT", "Logic bomb"]
+        },
+        "Explanation": "To overwhelm a server with SYN packets we will need to utilize the combined bandwidth of a botnet. A botnet is a collection of compromised computers that act together in unison to perform a DDoS (Distributed Denial of Service). The individual computers are often called bots or zombies."
+    },
+    {
+        "question": "A user is having problem accessing network shares. An admin investigates and finds the following on the user’s computer: What attack has been performed on this computer?",
+        "answers": {
+            "correct": "ARP poisoning",
+            "incorrect": ["Directory traversal", "Pass-the-hash", "Mac flood", "IP conflict", "DHCP starvation attack"]
+        },
+        "Explanation": "Two different devices shouldn’t have the same MAC addresses. Since these are dynamically learned ARP entries it is reasonable to believe this was an ARP poisoning. Device .1 is probably the default gateway and then device .11 is the MitM."
+    },
+    {
+        "question": "A news article states that a popular web browser deployed on all corporate PCs is vulnerable to a zero-day attack. Which of the following MOST concern the Chief Information Security Officer about the information in the news article?",
+        "answers": {
+            "correct": "No patches are available for the web browser",
+            "incorrect": ["Insider threats have compromised this network", "Web browsing is not functional for the entire network", "Antivirus signatures are required to be updated immediately"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "What attack best describes the logs below: \n\n- \n\n12.10.2020 @ 3:14:12 user admin login failed password: password1\n\n12.10.2020 @ 3:14:12 user steve login failed password: password1\n\n12.10.2020 @ 3:14:12 user john login failed password: password1\n\n12.10.2020 @ 3:14:12 user jane login failed password: password1\n\n12.10.2020 @ 3:14:12 user jill login failed password: password1\n\n12.10.2020 @ 3:14:12 user user login failed password: password1\n\n- \n\n12.10.2020 @ 3:14:13 user admin login failed password: password12\n\n12.10.2020 @ 3:14:13 user steve login failed password: password12\n\n12.10.2020 @ 3:14:14 user john login failed password: password12\n\n12.10.2020 @ 3:14:14 user jane login failed password: password12\n\n12.10.2020 @ 3:14:14 user jill login failed password: password12\n\n12.10.2020 @ 3:14:14 user user login failed password: password12",
+        "answers": {
+            "correct": "Password spraying",
+            "incorrect": ["Brute-force", "Spraying", "Dictionary", "Rainbow table"]
+        },
+        "Explanation": "Password spraying! Using common passwords against several user accounts."
+    },
+    {
+        "question": "A routine audit of medical billing claims revealed that several claims were submitted without the subscriber's knowledge. A review of the audit logs for the medical billing company's system indicated a company employee downloaded customer records and adjusted the direct deposit information to a personal bank account. Which of the following does this action describe?",
+        "answers": {
+            "correct": "Insider threat",
+            "incorrect": ["Social engineering", "Third-party risk", "Data breach"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The layer 2 address table has hundreds of entries similar to the ones above. Which of the following attacks has MOST likely occurred?",
+        "answers": {
+            "correct": "MAC flooding",
+            "incorrect": ["SQL injection", "DNS spoofing", "ARP poisoning"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security manager runs Nessus scans of the network after every maintenance window. Which of the following is the security manager MOST likely trying to accomplish?",
+        "answers": {
+            "correct": "Verifying that system patching has effectively removed known vulnerabilities",
+            "incorrect": ["Identifying assets on the network that may not exist on the network asset inventory", "Validating the hosts do not have vulnerable ports exposed to the internet", "Checking the status of the automated malware analysis that is being performed"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following statements BEST describes zero-day exploits?",
+        "answers": {
+            "correct": "A zero-day exploit is initially undetectable and no patch for it exists",
+            "incorrect": ["When a zero-day exploit is discovered the system cannot be protected by any means", "Zero-day exploits have their own scoring category in CVSS", "Discovering zero-day exploits is always performed via bug bounty programs"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst receives an alert from the company's SIEM that anomalous activity is coming from a local source IP address of 192.168.34.26. The Chief Information Security Officer asks the analyst to block the originating source. Several days later another employee opens an internal ticket stating that vulnerability scans are no longer being performed properly. The IP address the employee provides is 192.168.34.26. Which of the following describes this type of alert?",
+        "answers": {
+            "correct": "False positive",
+            "incorrect": ["True positive", "True negative", "False negative"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is providing security awareness training regarding the importance of not forwarding social media messages from unverified sources. Which of the following risks would this training help to prevent?",
+        "answers": {
+            "correct": "Hoaxes",
+            "incorrect": ["SPIMs", "Identity fraud", "Credential harvesting"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An information security policy states that separation of duties is required for all highly sensitive database changes that involve customers' financial data. Which of the following will this be BEST to prevent?",
+        "answers": {
+            "correct": "An insider threat",
+            "incorrect": ["Least privilege", "A data breach", "A change control violation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An attacker was eavesdropping on a user who was shopping online. The attacker was able to spoof the IP address associated with the shopping site. Later the user received an email regarding the credit card statement with unusual purchases. Which of the following attacks took place?",
+        "answers": {
+            "correct": "On-path attack",
+            "incorrect": ["Protocol poisoning", "Domain hijacking", "Bluejacking"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security administrator is analyzing the corporate wireless network. The network only has two access points running on channels 1 and 11. While using airodump-ng the administrator notices other access points are running with the same corporate ESSID on all available channels and with the same BSSID of one of the legitimate access points. Which of the following attacks in happening on the corporate network?",
+        "answers": {
+            "correct": "Evil twin",
+            "incorrect": ["Man in the middle", "Jamming", "Rogue access point", "Disassociation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An employee received a word processing file that was delivered as an email attachment. The subject line and email content enticed the employee to open the attachment. Which of the following attack vectors BEST matches this malware?",
+        "answers": {
+            "correct": "Macro-enabled file",
+            "incorrect": ["Embedded Python code", "Bash scripting", "Credential-harvesting website"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would MOST likely be identified by a credentialed scan but would be missed by an uncredentialed scan?",
+        "answers": {
+            "correct": "Missing patches for third-party software on Windows workstations and servers.",
+            "incorrect": ["Vulnerabilities with a CVSS score greater than 6.9.", "Critical infrastructure vulnerabilities on non-IP protocols.", "CVEs related to non-Microsoft systems such as printers and switches."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After gaining access to a dual-homed (i.e., wired and wireless) multifunction device by exploiting a vulnerability in the device's firmware, a penetration tester then gains shell access on another networked asset. This technique is an example of:",
+        "answers": {
+            "correct": "pivoting.",
+            "incorrect": ["privilege escalation", "footprinting", "persistence"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A SOC operator is analyzing a log file that contains the following entries: What best describes this attack?",
+        "answers": {
+            "correct": "Command injection and directory traversal attempts",
+            "incorrect": ["SQL injection and improper input-handling attempts", "Cross-site scripting and resource exhaustion attempts", "Error handling and privilege escalation attempts"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is receiving numerous alerts reporting that the response time of an internet-facing application has been degraded. However the internal network performance was not degraded. Which of the following MOST likely explains this behavior?",
+        "answers": {
+            "correct": "DDoS attack",
+            "incorrect": ["DNS poisoning", "MAC flooding", "ARP poisoning"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A penetration tester successfully gained access to a company’s network. The investigating analyst determines malicious traffic connected through the WAP despite filtering rules being in place. Logging in to the connected switch the analyst sees the following in the ARP table: Which of the following did the penetration tester MOST likely use?",
+        "answers": {
+            "correct": "ARP poisoning",
+            "incorrect": ["MAC cloning", "Man in the middle", "Evil twin"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company was compromised and a security analyst discovered the attacker was able to get access to a service account. The following logs were discovered during the investigation: Which of the following MOST likely would have prevented the attacker from learning the service account name?",
+        "answers": {
+            "correct": "Proper error handling",
+            "incorrect": ["Race condition testing", "Forward web server logs to a SIEM", "Input sanitization"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user's login credentials were recently compromised. During the investigation the security analyst determined the user input his credentials into a pop-up window when prompted to confirm the username and password. However the trusted website does not use a pop-up for entering user credentials. Which of the following attacks occurred?",
+        "answers": {
+            "correct": "DNS poisoning",
+            "incorrect": ["Cross-site scripting", "SQL injection", "Certificate forgery"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company reduced the area utilized in its datacenter by creating virtual networking through automation and by creating provisioning routes and rules through scripting. Which of the following does this example describe?",
+        "answers": {
+            "correct": "laC",
+            "incorrect": ["MSSP", "Containers", "SaaS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "As part of the lessons-learned phase the SOC is tasked with building methods to detect if a previous incident is happening again. Which of the following would allow the security analyst to alert the SOC if an event is reoccurring?",
+        "answers": {
+            "correct": "Creating a playbook within the SOAR",
+            "incorrect": ["Implementing rules in the NGFW", "Updating the DLP hash database", "Publishing a new CRL with revoked certificates"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A systems administrator is considering different backup solutions for the IT infrastructure. The company is looking for a solution that offers the fastest recovery time while also saving the most amount of storage used to maintain the backups. Which of the following recovery solutions would be the BEST option to meet these requirements?",
+        "answers": {
+            "correct": "Differential",
+            "incorrect": ["Snapshot", "Full", "Tape"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization wants seamless authentication to its applications. Which of the following should the organization employ to meet this requirement?",
+        "answers": {
+            "correct": "SSO",
+            "incorrect": ["SOAP", "SAML", "Kerberos"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A recent audit cited a risk involving numerous low-criticality vulnerabilities created by a web application using a third-party library. The development staff states that there are still customers using the application even though it is end of life and it would be a substantial burden to update the application for compatibility with more secure libraries. Which of the following would be the MOST prudent course of action?",
+        "answers": {
+            "correct": "Use containerization to segment the application from other applications to eliminate the risk",
+            "incorrect": ["Deny the risk due to the end-of-life status of the application.", "Outsource the application to a third-party developer group", "Accept the risk if there is a clear road map for timely decommission"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Chief Information Security Officer (CISO) is evaluating the dangers involved in deploying a new ERP system for the company. The CISO categorizes the system selects the controls that apply to the system implements the controls and then assesses the success of the controls before authorizing the system. Which of the following is the CISO using to evaluate the environment for this new ERP system?",
+        "answers": {
+            "correct": "NIST Risk Management Framework",
+            "incorrect": ["The Diamond Model of Intrusion Analysis", "CIS Critical Security Controls", "ISO 27002"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During an investigation the incident response team discovers that multiple administrator accounts were suspected of being compromised. The host audit logs indicate a repeated brute-force attack on a single administrator account followed by suspicious logins from unfamiliar geographic locations. Which of the following data sources would be BEST to use to assess the accounts impacted by this attack?",
+        "answers": {
+            "correct": "User behavior analytics",
+            "incorrect": ["Dump files", "Bandwidth monitors", "Protocol analyzer output"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During an incident an EDR system detects an increase in the number of encrypted outbound connections from multiple hosts. A firewall is also reporting an increase in outbound connections that use random high ports. An analyst plans to review the correlated logs to find the source of the incident. Which of the following tools will BEST assist the analyst?",
+        "answers": {
+            "correct": "A SIEM",
+            "incorrect": ["A vulnerability scanner", "A NGFW", "The Windows Event Viewer"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A network engineer at a company with a web server is building a new web environment with the following requirements: Only one web server at a time can service requests. If the primary web server fails a failover needs to occur to ensure the secondary web server becomes the primary. Which of the following load-balancing options BEST fits the requirements?",
+        "answers": {
+            "correct": "Active-passive",
+            "incorrect": ["Cookie-based", "Persistence", "Round robin"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During a recent penetration test the tester discovers large amounts of data were exfiltrated over the course of 12 months via the Internet. The penetration tester stops the test to inform the client of the findings. Which of the following should be the client's NEXT step to mitigate the issue?",
+        "answers": {
+            "correct": "Perform containment on the critical servers and resources",
+            "incorrect": ["Conduct a full vulnerability scan to identify possible vulnerabilities", "Review the firewall and identify the source of the active connection", "Disconnect the entire infrastructure from the Internet"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is planning to install a guest wireless network so visitors will be able to access the internet. The stakeholders want the network to be easy to connect to so time is not wasted during meetings. The WAPs are configured so that power levels and antennas cover only the conference rooms where visitors will attend meetings. Which of the following would BEST protect the company’s internal wireless network against visitors accessing company resources?",
+        "answers": {
+            "correct": "Configure the guest wireless network to be on a separate VLAN from the company's internal wireless network",
+            "incorrect": ["Change the password for the guest wireless network every month.", "Decrease the power levels of the access points for the guest wireless network.", "Enable WPA2 using 802.1X for logging on to the guest wireless network."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following types of attacks is being attempted and how can it be mitigated?",
+        "answers": {
+            "correct": "Directory traversal: implement a WAF",
+            "incorrect": ["XSS; implement a SIEM", "CSRF; implement an IPS", "SQL injection: implement an IDS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following control types is focused primarily on reducing risk before an incident occurs?",
+        "answers": {
+            "correct": "Preventive",
+            "incorrect": ["Deterrent", "Corrective", "Detective"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Per company security policy IT staff members are required to have separate credentials to perform administrative functions using just-in-time permissions. Which of the following solutions is the company implementing?",
+        "answers": {
+            "correct": "Privileged access management",
+            "incorrect": ["Attribute-based access control", "SSO", "RADIUS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following will increase cryptographic security?",
+        "answers": {
+            "correct": "High data entropy",
+            "incorrect": ["Hashing", "Algorithms that require less computing power", "Longer key longevity"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following components can be used to consolidate and forward inbound Internet traffic to multiple cloud environments though a single firewall?",
+        "answers": {
+            "correct": "Transit gateway",
+            "incorrect": ["Cloud hot site", "Edge computing", "DNS sinkhole"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is investigating suspicious traffic on the web server located at IP address 10.10.1.1. A search of the WAF logs reveals the following output: Which of the following is MOST likely occurring?",
+        "answers": {
+            "correct": "SQLi attack",
+            "incorrect": ["XSS attack", "Replay attack", "XSRF attack"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A recent security breach exploited software vulnerabilities in the firewall and within the network management solution. Which of the following will MOST likely be used to identify when the breach occurred through each device?",
+        "answers": {
+            "correct": "SIEM correlation dashboards",
+            "incorrect": ["Firewall syslog event logs", "Network management solution login audit logs", "Bandwidth monitors and interface sensors"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The Chief Technology Officer of a local college would like visitors to utilize the school's WiFi but must be able to associate potential malicious activity to a specific person. Which of the following would BEST allow this objective to be met?",
+        "answers": {
+            "correct": "Deploying a captive portal to capture visitors' MAC addresses and names",
+            "incorrect": ["Requiring all new on-site visitors to configure their devices to use WPS", "Implementing a new SSID for every event hosted by the college that has visitors", "Creating a unique PSK for every visitor when they arrive at the reception area"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Two organizations plan to collaborate on the evaluation of new SIEM solutions for their respective companies. A combined effort from both organizations' SOC teams would speed up the effort. Which of the following can be written to document this agreement?",
+        "answers": {
+            "correct": "MOU",
+            "incorrect": ["ISA", "SLA", "NDA"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A malware attack has corrupted 30TB of company data across all file servers. A systems administrator identifies the malware and contains the issue but the data is unrecoverable. The administrator is not concerned about the data loss because the company has a system in place that will allow users to access the data that was backed up last night. Which of the following resiliency techniques did the administrator MOST likely use to prevent impacts to business operations after an attack?",
+        "answers": {
+            "correct": "Tape backups",
+            "incorrect": ["Replication", "RAID", "Cloud storage"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A cybersecurity administrator needs to implement a Layer 7 security control on a network and block potential attacks. Which of the following can block an attack at Layer 7? (Select TWO).",
+        "answers": {
+            "correct": ["NIPS", "WAF"],
+            "incorrect": ["HIDS", "HSM", "NAC", "NIDS", "Stateless firewall"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is moving away from the use of client-side and server-side certificates for EAP. The company would like for the new EAP solution to have the ability to detect rogue access points. Which of the following would accomplish these requirements?",
+        "answers": {
+            "correct": "EAP-FAST",
+            "incorrect": ["PEAP", "EAP-TLS", "EAP-TTLS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An amusement park is implementing a biometric system that validates customers' fingerprints to ensure they are not sharing tickets. The park's owner values customers above all and would prefer customers' convenience over security. For this reason which of the following features should the security team prioritize FIRST?",
+        "answers": {
+            "correct": "Low FRR",
+            "incorrect": ["LOW FAR", "Low efficacy", "Low CER"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security proposal was set up to track requests for remote access by creating a baseline of the users' common sign-in properties. When a baseline deviation is detected an MFA challenge will be triggered. Which of the following should be configured in order to deploy the proposal?",
+        "answers": {
+            "correct": "Context-aware authentication",
+            "incorrect": ["Simultaneous authentication of equals", "Extensive authentication protocol", "Agentless network access control"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company recently experienced a significant data loss when proprietary information was leaked to a competitor. The company took special precautions by using proper labels; however email filter logs do not have any record of the incident. An Investigation confirmed the corporate network was not breached but documents were downloaded from an employee's COPE tablet and passed to the competitor via cloud storage. Which of the following is the BEST remediation for this data leak?",
+        "answers": {
+            "correct": "DLP",
+            "incorrect": ["User training", "CASB", "MDM"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The Chief Information Security Officer wants to prevent exfiltration of sensitive information from employee cell phones when using public USB power charging stations. Which of the following would be the BEST solution to implement?",
+        "answers": {
+            "correct": "USB data blocker",
+            "incorrect": ["DLP", "USB OTG", "Disabling USB ports"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is planning to open other datacenters to sustain operations in the event of a natural disaster. Which of the following considerations would BEST support the organization's resiliency?",
+        "answers": {
+            "correct": "Geographic dispersal",
+            "incorrect": ["Generator power", "Fire suppression", "Facility automation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst has been asked by the Chief Information Security Officer to: develop a secure method of providing centralized management of infrastructure, reduce the need to constantly replace aging end user machines, and provide a consistent user desktop experience. Which of the following BEST meets these requirements?",
+        "answers": {
+            "correct": "VDI",
+            "incorrect": ["BYOD", "Mobile device management", "Containerization"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Historically a company has had issues with users plugging in personally owned removable media devices into corporate computers. As a result the threat of malware incidents is almost constant. Which of the following would BEST help prevent the malware from being installed on the computers?",
+        "answers": {
+            "correct": "EDR",
+            "incorrect": ["AUP", "NGFW", "DLP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During an incident response an analyst applied rules to all inbound traffic on the border firewall and implemented ACLs on each critical server. Following an investigation the company realizes it is still vulnerable because outbound traffic is not restricted and the adversary is able to maintain a presence in the network. In which of the following stages of the Cyber Kill Chain is the adversary currently operating?",
+        "answers": {
+            "correct": "Actions on objective",
+            "incorrect": ["Reconnaissance", "Command and control", "Exploitation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst has been tasked with creating a new WiFi network for the company. The requirements received by the analyst are as follows: Must be able to differentiate between users connected to WiFi, the encryption keys need to change routinely without interrupting the users or forcing reauthentication, must be able to integrate with RADIUS, must not have any open SSIDs. Which of the following options BEST accommodates these requirements?",
+        "answers": {
+            "correct": "WPA2-Enterprise",
+            "incorrect": ["WPA3-PSK", "802.11n", "WPS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An application owner reports suspicious activity on an internal financial application from various internal users within the past 14 days. A security analyst notices the following: Financial transactions were occurring during irregular time frames and outside of business hours by unauthorized users. Internal users in question were changing their passwords frequently during that time period. A jump box that several domain administrator users use to connect to remote devices was recently compromised. The authentication method used in the environment is NTLM. Which of the following types of attacks is MOST likely being used to gain unauthorized access?",
+        "answers": {
+            "correct": "Pass-the-hash",
+            "incorrect": ["Brute-force", "Directory traversal", "Replay"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A systems administrator is troubleshooting a server's connection to an internal web server. The administrator needs to determine the correct ports to use. Which of the following tools BEST shows which ports on the web server are in a listening state?",
+        "answers": {
+            "correct": "Netstat",
+            "incorrect": ["Ipconfig", "SSH", "Ping"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following describes the continuous delivery software development methodology?",
+        "answers": {
+            "correct": "Agile",
+            "incorrect": ["Waterfall", "Spiral", "V-shaped"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is looking to migrate some servers to the cloud to minimize its technology footprint. The company has 100 databases that are on premises. Which of the following solutions will require the LEAST management and support from the company?",
+        "answers": {
+            "correct": "SaaS",
+            "incorrect": ["IaaS", "PaaS", "SDN"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "All security analysts' workstations at a company have network access to a critical server VLAN. The information security manager wants to further enhance the controls by requiring that all access to the secure VLAN be authorized only from a given single location. Which of the following will the information security manager MOST likely implement?",
+        "answers": {
+            "correct": "A jump server",
+            "incorrect": ["A forward proxy server", "A reverse proxy server", "A stateful firewall server"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company suspects that some corporate accounts were compromised. The number of suspicious logins from locations not recognized by the users is increasing. Employees who travel need their accounts protected without the risk of blocking legitimate login requests that may be made over new sign-in properties. Which of the following security controls can be implemented?",
+        "answers": {
+            "correct": "Enforce MFA when an account request reaches a risk threshold.",
+            "incorrect": ["Implement geo fencing to only allow access from headquarters", "Enforce time-based login requests trial align with business hours", "Shift the access control scheme to a discretionary access control"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following BEST reduces the security risks introduced when running systems that have expired vendor support and lack an immediate replacement?",
+        "answers": {
+            "correct": "Implement proper network access restrictions",
+            "incorrect": ["Initiate a bug bounty program", "Classify the system as shadow IT", "Increase the frequency of vulnerability scans"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization wants to implement a biometric system with the highest likelihood that an unauthorized user will be denied access. Which of the following should the organization use to compare biometric solutions?",
+        "answers": {
+            "correct": "FAR",
+            "incorrect": ["FRR", "Difficulty of use", "Cost", "CER"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following environments minimizes end user disruption and is MOST likely to be used to assess the impacts of any database migrations or major system changes by using the final version of the code in an operationally representative environment?",
+        "answers": {
+            "correct": "Staging",
+            "incorrect": ["Test", "Production", "Development"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A database administrator wants to grant access to an application that will be reading and writing data to a database. The database is shared by other applications also used by the finance department. Which of the following account types is MOST appropriate for this purpose?",
+        "answers": {
+            "correct": "Service",
+            "incorrect": ["Shared", "Generic", "Admin"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A junior security analyst is conducting an analysis after passwords were changed on multiple accounts without users' interaction. The SIEM have multiple login entries with the following text: Which of the following is the MOST likely attack conducted on the environment?",
+        "answers": {
+            "correct": "Malicious script",
+            "incorrect": ["Privilege escalation", "Domain hijacking", "DNS poisoning"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is receiving emails with links to phishing sites that look very similar to the company's own website address and content. Which of the following is the BEST way for the company to mitigate this attack?",
+        "answers": {
+            "correct": "Generate a list of domains similar to the company's own and implement a DNS sinkhole for each.",
+            "incorrect": ["Create a honeynet to trap attackers who access the VPN with credentials obtained by phishing.", "Use an automated tool to flood the phishing websites with fake usernames and passwords.", "Disable POP and IMAP on all Internet-facing email servers and implement SMTPS."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "As part of a security compliance assessment an auditor performs automated vulnerability scans. In addition which of the following should the auditor do to complete the assessment?",
+        "answers": {
+            "correct": "Configuration reviews",
+            "incorrect": ["User behavior analysis", "Packet captures", "Log analysis"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After multiple on premises security solutions were migrated to the cloud the incident response time increased. The analysts are spending a long time to trace information on different cloud consoles and correlating data in different formats. Which of the following can be used to optimize the incident response time?",
+        "answers": {
+            "correct": "CASB",
+            "incorrect": ["VPC", "SWG", "CMS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is the MOST relevant security check to be performed before embedding third party libraries in developed code?",
+        "answers": {
+            "correct": "Assess existing vulnerabilities affecting the third-party code and the remediation efficiency of the libraries' developers.",
+            "incorrect": ["Check to see if the third party has resources to create dedicated development and staging environments.", "Verify the number of companies that downloaded the third-party code and the number of contributions on the code repository.", "Read multiple penetration-testing reports for environments running software that reused the library."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Certain users are reporting their accounts are being used to send unauthorized emails and conduct suspicious activities. After further investigation a security analyst notices the following: All users share workstations throughout the day. Endpoint protection was disabled on several workstations throughout the network. Travel times on logins from the affected users are impossible. Sensitive data is being uploaded to external sites. All user account passwords were forced to be reset and the issue continued. Which of the following attacks is being used to compromise the user accounts?",
+        "answers": {
+            "correct": "Keylogger",
+            "incorrect": ["Brute-force", "Dictionary", "Rainbow"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is the MOST likely reason for securing an air-gapped laboratory HVAC system?",
+        "answers": {
+            "correct": "To ensure availability",
+            "incorrect": ["To avoid data leakage", "To protect surveillance logs", "To restrict remote access"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An application developer accidentally uploaded a company's code-signing certificate private key to a public web server. The company is concerned about malicious use of its certificate. Which of the following should the company do FIRST?",
+        "answers": {
+            "correct": "Revoke the code-signing certificate.",
+            "incorrect": ["Delete the private key from the repository.", "Verify the public key is not exposed as well.", "Update the DLP solution to check for private keys."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is investigating some users who are being redirected to a fake website that resembles www.comptia.org. The following output was found on the naming server of the organization: Which of the following attacks has taken place?",
+        "answers": {
+            "correct": "DNS poisoning",
+            "incorrect": ["Domain reputation", "Domain hijacking", "Disassociation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The Chief Information Security Officer (CISO) requested a report on potential areas of improvement following a security incident. Which of the following incident response processes is the CISO requesting?",
+        "answers": {
+            "correct": "Lessons learned",
+            "incorrect": ["Preparation", "Detection", "Containment", "Root cause analysis"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "While reviewing an alert that shows a malicious request on one web application a cybersecurity analyst is alerted to a subsequent token reuse moments later on a different service using the same single sign-on method. Which of the following would BEST detect a malicious actor?",
+        "answers": {
+            "correct": "Utilizing SIEM correlation engines",
+            "incorrect": ["Deploying Netflow at the network border", "Disabling session tokens for all sites", "Deploying a WAF for the web server"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An administrator is experiencing issues when trying to upload a support file to a vendor. A pop-up message reveals that a payment card number was found in the file and the file upload was blocked. Which of the following controls is most likely causing this issue and should be checked FIRST?",
+        "answers": {
+            "correct": "DLP",
+            "incorrect": ["Firewall rule", "Content filter", "MDM", "Application whitelist"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After returning from a conference a user's laptop has been operating slower than normal and overheating and the fans have been running constantly. During the diagnosis process an unknown piece of hardware is found connected to the laptop's motherboard. Which of the following attack vectors was exploited to install the hardware?",
+        "answers": {
+            "correct": "Direct access",
+            "incorrect": ["Removable media", "Spear phishing", "Supply chain"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following policies establishes rules to measure third-party work tasks and ensure deliverables are provided within a specific timeline?",
+        "answers": {
+            "correct": "SLA",
+            "incorrect": ["MOU", "AUP", "NDA"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A customer has reported that an organization's website displayed an image of a smiley face rather than the expected web page for a short time two days earlier. A security analyst reviews log tries and sees the following around the lime of the incident: Which of the following is MOST likely occurring?",
+        "answers": {
+            "correct": "DNS poisoning",
+            "incorrect": ["Invalid trust chain", "Domain hijacking", "URL redirection"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following in a forensic investigation should be priorities based on the order of volatility? (Select TWO).",
+        "answers": {
+            "correct": ["RAM", "Cache"],
+            "incorrect": ["Page files", "Event logs", "Stored files", "HDD"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security forensics analyst is examining a virtual server. The analyst wants to preserve the present state of the virtual server including memory contents. Which of the following backup types should be used?",
+        "answers": {
+            "correct": "Snapshot",
+            "incorrect": ["Differential", "Cloud", "Full", "Incremental"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security monitoring company offers a service that alerts its customers if their credit cards have been stolen. Which of the following is the MOST likely source of this information?",
+        "answers": {
+            "correct": "The dark web",
+            "incorrect": ["STIX", "TAXII", "Social media", "PCI"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization has hired a red team to simulate attacks on its security posture. Which of the following will the blue team do after detecting an IoC?",
+        "answers": {
+            "correct": "Activate runbooks for incident response",
+            "incorrect": ["Reimage the impacted workstations.", "Conduct forensics on the compromised system", "Conduct passive reconnaissance to gather information"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst was called to investigate a file received directly from a hardware manufacturer. The analyst is trying to determine whether the file was modified in transit before installation on the user's computer. Which of the following can be used to safely assess the file?",
+        "answers": {
+            "correct": "Check the hash of the installation file",
+            "incorrect": ["Match the file names", "Verify the URL download location", "Verify the code-signing certificate"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After a recent security breach a security analyst reports that several administrative usernames and passwords are being sent via cleartext across the network to access network devices over port 23. Which of the following should be implemented so all credentials sent over the network are encrypted when remotely accessing and configuring network devices?",
+        "answers": {
+            "correct": "SSH",
+            "incorrect": ["SNMPv3", "SFTP", "Telnet", "FTP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security administrator has discovered that workstations on the LAN are becoming infected with malware. The cause of the infections appears to be users receiving phishing emails that are bypassing the current email-filtering technology. As a result users are being tricked into clicking on malicious URLs as no internal controls currently exist in the environment to evaluate their safety. Which of the following would be BEST to implement to address the issue?",
+        "answers": {
+            "correct": "Awareness training",
+            "incorrect": ["Forward proxy", "HIDS", "A jump server", "IPS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following are common VoIP-associated vulnerabilities? (Select TWO).",
+        "answers": {
+            "correct": ["SPIM", "Vishing"],
+            "incorrect": ["Hopping", "Phishing", "Credential harvesting", "Tailgating"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst has identified malware spreading through the corporate network and has activated the CSIRT. Which of the following should the analyst do NEXT?",
+        "answers": {
+            "correct": "Attempt to quarantine all infected hosts to limit further spread.",
+            "incorrect": ["Review how the malware was introduced to the network.", "Create help desk tickets to get infected systems reimaged.", "Update all endpoint antivirus solutions with the latest updates."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A cloud service provider has created an environment where customers can connect existing local networks to the cloud for additional computing resources and block internal HR applications from reaching the cloud. Which of the following cloud models is being used?",
+        "answers": {
+            "correct": "Hybrid",
+            "incorrect": ["Public", "Community", "Private"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Developers are about to release a financial application but the number of fields on the forms that could be abused by an attacker is troubling. Which of the following techniques should be used to address this vulnerability?",
+        "answers": {
+            "correct": "Implement input validation",
+            "incorrect": ["Encrypt data before submission", "Perform a manual review", "Conduct a peer review session"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A systems administrator reports degraded performance on a virtual server. The administrator increases the virtual memory allocation which improves conditions but performance degrades again after a few days. The administrator runs an analysis tool and sees the following output: The administrator terminates the timeAttend.exe observes system performance over the next few days and notices that the system performance does not degrade. Which of the following issues is MOST likely occurring?",
+        "answers": {
+            "correct": "Memory leak",
+            "incorrect": ["DLL injection", "API attack", "Buffer overflow"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The Chief Information Security Officer (CISO) has requested that a third-party vendor provide supporting documents that show proper controls are in place to protect customer data. Which of the following would be BEST for the third-party vendor to provide to the CISO?",
+        "answers": {
+            "correct": "SOC 2 Type 2 report",
+            "incorrect": ["GDPR compliance attestation", "Cloud Security Alliance materials", "NIST RMF workbooks"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is a benefit of including a risk management framework into an organization's security approach?",
+        "answers": {
+            "correct": "It incorporates control development policy and management activities into IT operations.",
+            "incorrect": ["It defines expected service levels from participating supply chain partners to ensure system outages are remediated in a timely manner", "It identifies specific vendor products that have been tested and approved for use in a secure environment.", "It provides legal assurances and remedies in the event a data breach occurs"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A technician enables full disk encryption on a laptop that will be taken on a business trip. Which of the following does this process BEST protect?",
+        "answers": {
+            "correct": "Data at rest",
+            "incorrect": ["Data in transit", "Data in processing", "Data tokenization"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following documents provide expectations at a technical level for quality availability and responsibilities?",
+        "answers": {
+            "correct": "SLA",
+            "incorrect": ["EOL", "MOU", "EOSL"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An engineer recently deployed a group of 100 web servers in a cloud environment. Per the security policy all web-server ports except 443 should be disabled. Which of the following can be used to accomplish this task?",
+        "answers": {
+            "correct": "Host-based firewall",
+            "incorrect": ["Application allow list", "SWG", "VPN"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following control types would be BEST to use in an accounting department to reduce losses from fraudulent transactions?",
+        "answers": {
+            "correct": "Detective",
+            "incorrect": ["Recovery", "Deterrent", "Corrective"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The database administration team is requesting guidance for a secure solution that will ensure confidentiality of cardholder data at rest only in certain fields in the database schema. The requirement is to substitute a sensitive data field with a non-sensitive field that is rendered useless if a data breach occurs. Which of the following is the BEST solution to meet the requirement?",
+        "answers": {
+            "correct": "Tokenization",
+            "incorrect": ["Masking", "Full disk encryption", "Mirroring"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A DBA reports that several production server hard drives were wiped over the weekend. The DBA also reports that several Linux servers were unavailable due to system files being deleted unexpectedly. A security analyst verified that software was configured to delete data deliberately from those servers. No backdoors to any servers were found. Which of the following attacks was MOST likely used to cause the data loss?",
+        "answers": {
+            "correct": "Logic bomb",
+            "incorrect": ["Ransomware", "Fileless virus", "Remote access Trojans", "Rootkit"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During a trial a judge determined evidence gathered from a hard drive was not admissible. Which of the following BEST explains this reasoning?",
+        "answers": {
+            "correct": "The forensic investigator forgot to run a checksum on the disk image after creation",
+            "incorrect": ["The chain of custody form did not note time zone offsets between transportation regions", "The computer was turned off and a RAM image could not be taken at the same time", "The hard drive was not properly kept in an antistatic bag when it was moved"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security engineer was assigned to implement a solution to prevent attackers from gaining access by pretending to be authorized users. Which of the following technologies meets the requirement?",
+        "answers": {
+            "correct": "MFA",
+            "incorrect": ["SSO", "IDS", "TPM"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company labeled some documents with the public sensitivity classification. This means the documents can be accessed by:",
+        "answers": {
+            "correct": "Employees of other companies and the press",
+            "incorrect": ["All members of the department that created the documents", "Only the company's employees and those listed in the document", "Only the individuals listed in the documents"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following actions would be recommended to improve an incident response process?",
+        "answers": {
+            "correct": "Train the team to identify the difference between events and incidents",
+            "incorrect": ["Modify access so the IT team has full access to the compromised assets", "Contact the authorities if a cybercrime is suspected", "Restrict communication surrounding the response to the IT team"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company needs to validate its updated incident response plan using a real-world scenario that will test decision points and relevant incident response actions without interrupting daily operations. Which of the following would BEST meet the company's requirements?",
+        "answers": {
+            "correct": "Tabletop exercise",
+            "incorrect": ["Red-team exercise", "Capture-the-flag exercise", "Phishing exercise"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is evaluating solutions to deploy an additional layer of protection for a web application. The goal is to allow only encrypted communications without relying on network devices. Which of the following can be implemented?",
+        "answers": {
+            "correct": "HTTP security headers",
+            "incorrect": ["DNSSEC implementation", "SRTP", "S/MIME"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A tax organization is working on a solution to validate the online submission of documents. The solution should be carried on a portable USB device that should be inserted on any computer that is transmitting a transaction securely. Which of the following is the BEST certificate for these requirements?",
+        "answers": {
+            "correct": "Computer certificate",
+            "incorrect": ["User certificate", "Self-signed certificate", "Root certificate"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A business operations manager is concerned that a PC that is critical to business operations will have a costly hardware failure soon. The manager is looking for options to continue business operations without incurring large costs. Which of the following would mitigate the manager's concerns?",
+        "answers": {
+            "correct": "Perform a physical-to-virtual migration",
+            "incorrect": ["Implement a full system upgrade", "Install uninterruptible power supplies", "Purchase cybersecurity insurance"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization would like to give remote workers the ability to use applications hosted inside the corporate network. Users will be allowed to use their personal computers or they will be provided organization assets. Either way no data or applications will be installed locally on any user systems. Which of the following mobile solutions would accomplish these goals?",
+        "answers": {
+            "correct": "VDI",
+            "incorrect": ["MDM", "COPE", "UTM"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst needs to be able to search and correlate logs from multiple sources in a single tool. Which of the following would BEST allow a security analyst to have this ability?",
+        "answers": {
+            "correct": "SIEM",
+            "incorrect": ["SOAR", "Log collectors", "Network-attached storage"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The Chief Information Security Officer directed a risk reduction in shadow IT and created a policy requiring all unsanctioned high-risk SaaS applications to be blocked from user access. Which of the following is the BEST security solution to reduce this risk?",
+        "answers": {
+            "correct": "CASB",
+            "incorrect": ["VPN concentrator", "MFA", "VPC endpoint"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security incident has been resolved. Which of the following BEST describes the importance of the final phase of the incident response plan?",
+        "answers": {
+            "correct": "It examines and documents how well the team responded discovers what caused the incident and determines how the incident can be avoided in the future",
+            "incorrect": ["It returns the affected systems back into production once systems have been fully patched data restored and vulnerabilities addressed", "It identifies the incident and the scope of the breach how it affects the production environment and the ingress point", "It contains the affected systems and disconnects them from the network preventing further spread of the attack or breach"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A help desk technician receives a phone call from someone claiming to be a part of the organization's cybersecurity incident response team. The caller asks the technician to verify the network's internal firewall IP address. Which of the following is the technician's BEST course of action?",
+        "answers": {
+            "correct": "Request the caller send an email for identity verification and provide the requested information via email to the caller",
+            "incorrect": ["Direct the caller to stop by the help desk in person and hang up declining any further requests from the caller", "Ask for the caller’s name verify the person's identity in the email directory and provide the requested information over the phone", "Write down the phone number of the caller if possible the name of the person requesting the information hang up and notify the organization's cybersecurity officer"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would BEST provide detective and corrective controls for thermal regulation?",
+        "answers": {
+            "correct": "An HVAC system",
+            "incorrect": ["A smoke detector", "A fire alarm", "A fire suppression system", "Guards"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The SOC for a large MSSP is meeting to discuss the lessons learned from a recent incident that took much too long to resolve. This type of incident has become more common in recent weeks and is consuming large amounts of the analysts' time due to manual tasks being performed. Which of the following solutions should the SOC consider to BEST improve its response time?",
+        "answers": {
+            "correct": "Implement a SOAR with customizable playbooks",
+            "incorrect": ["Configure a NIDS appliance using a Switched Port Analyzer", "Collect OSINT and catalog the artifacts in a central repository", "Install a SIEM with community-driven threat intelligence"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is the BEST example of a cost-effective physical control to enforce a USB removable media restriction policy?",
+        "answers": {
+            "correct": "Placing systems into locked key-controlled containers with no access to the USB ports",
+            "incorrect": ["Putting security/antitamper tape over USB ports logging the port numbers and regularly inspecting the ports", "Implementing a GPO that will restrict access to authorized USB removable media and regularly verifying that it is enforced", "Installing an endpoint agent to detect connectivity of USB and removable media"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization discovered files with proprietary financial data have been deleted. The files have been recovered from backup but every time the Chief Financial Officer logs in to the file server the same files are deleted again. No other users are experiencing this issue. Which of the following types of malware is MOST likely causing this behavior?",
+        "answers": {
+            "correct": "Logic bomb",
+            "incorrect": ["Crypto malware", "Spyware", "Remote access Trojan"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst generated a file named host1.pcap and shared it with a team member who is going to use it for further incident analysis. Which of the following tools will the other team member MOST likely use to open this file?",
+        "answers": {
+            "correct": "Wireshark",
+            "incorrect": ["Autopsy", "Memdump", "FTK imager"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An IT manager is estimating the mobile device budget for the upcoming year. Over the last five years the number of devices that were replaced due to loss damage or theft steadily increased by 10%. Which of the following would BEST describe the estimated number of devices to be replaced next year?",
+        "answers": {
+            "correct": "ARO",
+            "incorrect": ["ALE", "RPO", "SLE"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is considering transitioning to the cloud. The company employs individuals from various locations around the world. The company does not want to increase its on-premises infrastructure blueprint and only wants to pay for additional compute power required. Which of the following solutions would BEST meet the needs of the company?",
+        "answers": {
+            "correct": "Hybrid environment",
+            "incorrect": ["Private cloud", "Managed Security Service Provider", "Hot backup site"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security policy states that common words should not be used as passwords. A security auditor was able to perform a dictionary attack against corporate credentials. Which of the following controls was being violated?",
+        "answers": {
+            "correct": "Password complexity",
+            "incorrect": ["Password history", "Password reuse", "Password length"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is assured when a user signs an email using a private key?",
+        "answers": {
+            "correct": "Non-repudiation",
+            "incorrect": ["Confidentiality", "Availability", "Authentication"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization implemented a process that compares the settings currently configured on systems against secure configuration guidelines in order to identify any gaps. Which of the following control types has the organization implemented?",
+        "answers": {
+            "correct": "Corrective",
+            "incorrect": ["Compensating", "Preventive", "Detective"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company wants to improve end-users' experiences when they log in to a trusted partner website. The company does not want the users to be issued separate credentials for the partner website. Which of the following should be implemented to allow users to authenticate using their own credentials to log in to the trusted partner's website?",
+        "answers": {
+            "correct": "Federation",
+            "incorrect": ["Directory service", "AAA server", "Multifactor authentication"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would be the BEST way to analyze diskless malware that has infected a VDI?",
+        "answers": {
+            "correct": "Take a memory snapshot of the running system.",
+            "incorrect": ["Shut down the VDI and copy off the event logs.", "Use NetFlow to identify command-and-control IPs.", "Run a full on-demand scan of the root volume."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A report delivered to the Chief Information Security Officer (CISO) shows that some user credentials could be exfiltrated. The report also indicates that users tend to choose the same credentials on different systems and applications. Which of the following policies should the CISO use to prevent someone from using the exfiltrated credentials?",
+        "answers": {
+            "correct": "MFA",
+            "incorrect": ["Lockout", "Time-based logins", "Password history"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following tools is effective in preventing a user from accessing unauthorized removable media?",
+        "answers": {
+            "correct": "USB data blocker",
+            "incorrect": ["Faraday cage", "Proximity reader", "Cable lock"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A new company wants to avoid channel interference when building a WLAN. The company needs to know the radio frequency behavior, identify dead zones, and determine the best place for access points. Which of the following should be done FIRST?",
+        "answers": {
+            "correct": "Conduct a site survey",
+            "incorrect": ["Configure heat maps", "Utilize captive portals", "Install Wi-Fi analyzers"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user enters a username and a password at the login screen for a web portal. A few seconds later the following message appears on the screen: Please use a combination of numbers, special characters, and letters in the password field. Which of the following concepts does this message describe?",
+        "answers": {
+            "correct": "Password complexity",
+            "incorrect": ["Password reuse", "Password history", "Password age"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An engineer wants to inspect traffic to a cluster of web servers in a cloud environment. Which of the following solutions should the engineer implement?",
+        "answers": {
+            "correct": "WAF",
+            "incorrect": ["Proxy server", "Load balancer", "VPN"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Data exfiltration analysis indicates that an attacker managed to download system configuration notes from a web server. The web-server logs have been deleted but the analysts have determined that the system configuration notes were stored in the database administrator's folder on the web server. Which of the following attacks explains what occurred? (Select TWO)",
+        "answers": {
+            "correct": ["Directory traversal", "Privilege escalation"],
+            "incorrect": ["Pass-the-hash", "SQL injection", "Cross-site scripting", "Request forgery"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is concerned about critical vulnerabilities that have been detected on some applications running inside containers. Which of the following is the BEST remediation strategy?",
+        "answers": {
+            "correct": "Update the base container image and redeploy the environment",
+            "incorrect": ["Include the containers in the regular patching schedule for servers", "Patch each running container individually and test the application", "Update the host in which the containers are running"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is the MOST effective control against zero-day vulnerabilities?",
+        "answers": {
+            "correct": "Network segmentation",
+            "incorrect": ["Patch management", "Intrusion prevention system", "Multiple vulnerability scanners"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following organizations sets frameworks and controls for optimal security configuration on systems?",
+        "answers": {
+            "correct": "ISO",
+            "incorrect": ["GDPR", "PCI DSS", "NIST"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following describes the exploitation of an interactive process to gain access to restricted areas?",
+        "answers": {
+            "correct": "Privilege escalation",
+            "incorrect": ["Persistence", "Buffer overflow", "Pharming"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is a known security risk associated with data archives that contain financial information?",
+        "answers": {
+            "correct": "Data can become a liability if archived longer than required by regulatory guidance",
+            "incorrect": ["Data must be archived off-site to avoid breaches and meet business requirements", "Companies are prohibited from providing archived data to e-discovery requests", "Unencrypted archives should be preserved as long as possible and encrypted"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is implementing a DLP solution on the file server. The file server has PII, financial information, and health information stored on it. Depending on what type of data is hosted on the file server, the company wants different DLP rules assigned to the data. Which of the following should the company do to help accomplish this goal?",
+        "answers": {
+            "correct": "Classify the data",
+            "incorrect": ["Mask the data", "Assign an application owner", "Perform a risk analysis"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A large bank with two geographically dispersed data centers is concerned about major power disruptions at both locations. Every day each location experiences very brief outages that last for a few seconds. However, during the summer a high risk of intentional brownouts that last up to an hour exists, particularly at one of the locations near an industrial complex. Which of the following is the BEST solution to reduce the risk of data loss?",
+        "answers": {
+            "correct": "PDU",
+            "incorrect": ["Dual supply", "Generator", "UPS", "Daily backups"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Several universities are participating in a collaborative research project and need to share compute and storage resources. Which of the following cloud deployment strategies would BEST meet this need?",
+        "answers": {
+            "correct": "Community",
+            "incorrect": ["Private", "Public", "Hybrid"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization has activated an incident response plan due to a malware outbreak on its network. The organization has brought in a forensics team that has identified an internet-facing Windows server as the likely point of initial compromise. The malware family that was detected is known to be distributed by manually logging on to servers and running the malicious code. Which of the following actions would be BEST to prevent reinfection from the initial infection vector?",
+        "answers": {
+            "correct": "Block port 3389 inbound from untrusted networks",
+            "incorrect": ["Prevent connections over TFTP from the internal network", "Create a firewall rule that blocks port 22 from the internet to the server", "Disable file sharing over port 445 to the server"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Chief Security Officer (CSO) is concerned that cloud-based services are not adequately protected from advanced threats and malware. The CSO believes there is a high risk that a data breach could occur in the near future due to the lack of detective and preventive controls. Which of the following should be implemented to BEST address the CSO's concerns? (Select TWO)",
+        "answers": {
+            "correct": ["A CASB", "An NG-SWG"],
+            "incorrect": ["A WAF", "Segmentation", "Encryption", "Containerization"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Field workers in an organization are issued mobile phones on a daily basis. All the work is performed within one city and the mobile phones are not used for any purpose other than work. The organization does not want these phones used for personal purposes. The organization would like to issue the phones to workers as permanent devices so the phones do not need to be reissued every day. Given the conditions described which of the following technologies would BEST meet these requirements?",
+        "answers": {
+            "correct": "Mobile device management",
+            "incorrect": ["Geofencing", "Containerization", "Remote wiping"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During a recent incident an external attacker was able to exploit an SMB vulnerability over the internet. Which of the following action items should a security analyst perform FIRST to prevent this from occurring again?",
+        "answers": {
+            "correct": "Block unneeded TCP 445 connections",
+            "incorrect": ["Check for any recent SMB CVEs", "Install AV on the affected server", "Deploy a NIDS in the affected subnet"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Business partners are working on a security mechanism to validate transactions securely. The requirement is for one company to be responsible for deploying a trusted solution that will register and issue artifacts used to sign, encrypt, and decrypt transaction files. Which of the following is the BEST solution to adopt?",
+        "answers": {
+            "correct": "PKI",
+            "incorrect": ["Blockchain", "SAML", "OAuth"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization wants to participate in threat intelligence information sharing with peer groups. Which of the following would MOST likely meet the organization's requirement?",
+        "answers": {
+            "correct": "Implement a TAXII server",
+            "incorrect": ["Perform OSINT investigations", "Subscribe to threat intelligence feeds", "Submit RFCs"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization has developed an application that needs a patch to fix a critical vulnerability. In which of the following environments should the patch be deployed LAST?",
+        "answers": {
+            "correct": "Production",
+            "incorrect": ["Test", "Staging", "Development"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following risk management strategies would an organization use to maintain a legacy system with known risks for operational purposes?",
+        "answers": {
+            "correct": "Mitigation",
+            "incorrect": ["Acceptance", "Transference", "Avoidance"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A recent security audit revealed that a popular website with IP address 172.16.1.5 also has an FTP service that employees were using to store sensitive corporate data. The organization's outbound firewall processes rules top-down. Which of the following would permit HTTP and HTTPS while denying all other services for this host?",
+        "answers": {
+            "correct": "access-rule permit tcp destination 172.16.1.5 port 80\naccess-rule permit tcp destination 172.16.1.5 port 443\naccess-rule deny ip destination 172.16.1.5",
+            "incorrect": ["access-rule permit tcp destination 172.16.1.5 port 22\naccess-rule permit tcp destination 172.16.1.5 port 443\naccess-rule deny tcp destination 172.16.1.5 port 80", "access-rule permit tcp destination 172.16.1.5 port 21\naccess-rule permit tcp destination 172.16.1.5 port 80\naccess-rule deny ip destination 172.16.1.5", "access-rule permit tcp destination 172.16.1.5 port 80\naccess-rule permit tcp destination 172.16.1.5 port 443\naccess-rule deny tcp destination 172.16.1.5 port 21"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A social media company based in North America is looking to expand into new global markets and needs to maintain compliance with international standards. Which of the following is the company's data protection officer MOST likely concerned?",
+        "answers": {
+            "correct": "GDPR",
+            "incorrect": ["NIST Framework", "ISO 27001", "PCI-DSS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Several users have opened tickets with the help desk. The help desk has reassigned the tickets to a security analyst for further review. The security analyst reviews the following metrics: Which of the following is MOST likely the result of the security analyst's review?",
+        "answers": {
+            "correct": "Corporate PCs have been turned into a botnet",
+            "incorrect": ["The ISP is dropping outbound connections", "The user of the Sales-PC fell for a phishing attack", "An on-path attack is taking place between PCs and the router"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Digital signatures use asymmetric encryption. This means the message is encrypted with:",
+        "answers": {
+            "correct": "the recipient's public key and decrypted with the recipient's private key",
+            "incorrect": ["the sender's private key and decrypted with the sender's public key", "the sender’s private key and decrypted with the recipient's public key", "the sender's public key and decrypted with the recipient's private key"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A website developer who is concerned about theft of the company's user database wants to protect weak passwords from offline brute-force attacks. Which of the following would be the BEST solution?",
+        "answers": {
+            "correct": "Use a key-stretching technique",
+            "incorrect": ["Lock accounts after five failed logons", "Precompute passwords with rainbow tables", "Hash passwords with the MD5 algorithm"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user reports trouble using a corporate laptop. The laptop freezes and responds slowly when writing documents and the mouse pointer occasionally disappears. The task list shows the following results: Which of the following is MOST likely the issue?",
+        "answers": {
+            "correct": "Spyware",
+            "incorrect": ["PUP", "RAT", "Keylogger"]
+        },
+        "Explanation": "Spyware will try to run invisibly but it will still use up memory and CPU time."
+    },
+    {
+        "question": "The organization’s bank only calls on a predetermined landline. What best describes the MFA (multifactor authentication) attribute that the bank is attempting to utilize?",
+        "answers": {
+            "correct": "Somewhere you are",
+            "incorrect": ["Something you exhibit", "Something you can do", "Someone you know"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Last month a company moved all of their corporate data to a private cloud and secured it with strong encryption and authentication mechanisms. Earlier this week a sales manager had their laptop stolen. Today enterprise data was stolen from a local database. Of the options below what is the most likely cause of this data breach?",
+        "answers": {
+            "correct": "Credential stuffing",
+            "incorrect": ["Bluejacking", "Man in the browser", "Shadow IT", "SQL injection"]
+        },
+        "Explanation": "If a sales manager uses the same password for several services, then it is likely someone retrieved a saved password from the laptop and then successfully used that on the cloud server. Credential stuffing involves getting a valid set of credentials from one location and then trying them elsewhere to gain access."
+    },
+    {
+        "question": "Name: Wikipedia.org\nAddress: 208.80.154.224\nWhich of the following attacks MOST likely occurred on the user's internal network?",
+        "answers": {
+            "correct": "DNS poisoning",
+            "incorrect": ["ARP poisoning", "URL redirection", "/etc/hosts poisoning"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company wants to restrict emailing of PHI documents. The company is implementing a DLP solution in order to restrict PHI documents. Which of the following should be performed first?",
+        "answers": {
+            "correct": "Classification",
+            "incorrect": ["Retention", "Governance", "Change management"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is building backup servers in geographically diverse locations. The Chief Information Security Officer implemented a requirement on the project that states the new hardware cannot be susceptible to the same vulnerabilities in the existing server room. Which of the following should the systems engineer consider?",
+        "answers": {
+            "correct": "Purchasing hardware from different vendors",
+            "incorrect": ["Migrating workloads to public cloud infrastructure", "Implementing a robust patch management solution", "Designing new detective security controls"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is working on a project to implement a solution that monitors network communications and provides alerts when abnormal behavior is detected. Which of the following is the security analyst MOST likely implementing?",
+        "answers": {
+            "correct": "User behavior analysis",
+            "incorrect": ["Vulnerability scans", "Security orchestration automation and response", "Threat hunting"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following provides a calculated value for known vulnerabilities so organizations can prioritize mitigation steps?",
+        "answers": {
+            "correct": "CVSS",
+            "incorrect": ["SIEM", "SOAR", "CVE"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Chief Information Security Officer has defined resiliency requirements for a new data center architecture. The requirements are as follows:\n- Critical file shares will remain accessible during and after a natural disaster\n- Five percent of the hard disks can fail at any given time without impacting the data\n- Systems will be forced to shut down gracefully when battery levels are below 20%\nWhich of the following are required to BEST meet these objectives? (Select THREE)",
+        "answers": {
+            "correct": ["Geographic dispersal", "Snapshots", "RAID"],
+            "incorrect": ["Redundant power supplies", "Load balancing", "Fiber switching", "laC", "NAS", "UPS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A forensic analyst needs to prove that data has not been tampered with since it was collected. Which of the following methods will the analyst MOST likely use?",
+        "answers": {
+            "correct": "Calculate the checksum using a hashing algorithm",
+            "incorrect": ["Look for tampering on the evidence collection bag", "Encrypt the collected data using asymmetric encryption", "Ensure proper procedures for chain of custody are being followed"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization has decided to purchase an insurance policy because a risk assessment determined that the cost to remediate the risk is greater than the five-year cost of the insurance policy. The organization is enabling risk:",
+        "answers": {
+            "correct": "transference",
+            "incorrect": ["avoidance", "acceptance", "mitigation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is the GREATEST security concern when outsourcing code development to third-party contractors for an internet-facing application?",
+        "answers": {
+            "correct": "Unknown backdoor",
+            "incorrect": ["Intellectual property theft", "Elevated privileges", "Quality assurance"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is auditing the manner in which its European customers' personal information is handled. Which of the following should the company consult?",
+        "answers": {
+            "correct": "GDPR",
+            "incorrect": ["ISO", "NIST", "PCI DSS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is designing the appropriate controls to limit unauthorized access to a physical site. The analyst has a directive to utilize the lowest possible budget. Which of the following would BEST meet the requirements?",
+        "answers": {
+            "correct": "Preventive controls",
+            "incorrect": ["Compensating controls", "Deterrent controls", "Detective controls"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would BEST provide a systems administrator with the ability to more efficiently identify systems and manage permissions and policies based on location, role, and service level?",
+        "answers": {
+            "correct": "Standard naming conventions",
+            "incorrect": ["Domain services", "Baseline configurations", "Diagrams"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following terms describes a broad range of information that is sensitive to a specific organization?",
+        "answers": {
+            "correct": "Proprietary",
+            "incorrect": ["Public", "Top secret", "Open-source"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would be indicative of a hidden audio file found inside of a piece of source code?",
+        "answers": {
+            "correct": "Steganography",
+            "incorrect": ["Homomorphic encryption", "Cipher suite", "Blockchain"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A software company adopted the following processes before releasing software to production: Peer review, Static code scanning, Signing. A considerable number of vulnerabilities are still being detected when code is executed on production. Which of the following security tools can improve vulnerability detection on this environment?",
+        "answers": {
+            "correct": "Dynamic code analysis tool",
+            "incorrect": ["File integrity monitoring for the source code", "Encrypted code repository", "Endpoint detection and response solution"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is migrating several SaaS applications that support SSO. The security manager wants to ensure the migration is completed securely. Which of the following should the organization consider before implementation? (Select TWO)",
+        "answers": {
+            "correct": ["The encryption method", "The registration authority"],
+            "incorrect": ["The back-end directory source", "The identity federation protocol", "The hashing method", "The certificate authority"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During an incident response process involving a laptop a host was identified as the entry point for malware. The management team would like to have the laptop restored and given back to the user. The cybersecurity analyst would like to continue investigating the intrusion on the host. Which of the following would allow the analyst to continue the investigation and also return the laptop to the user as soon as possible?",
+        "answers": {
+            "correct": "dd",
+            "incorrect": ["memdump", "tcpdump", "head"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During a security incident investigation an analyst consults the company’s SIEM and sees an event concerning high traffic to a known malicious command-and-control server. The analyst would like to determine the number of company workstations that may be impacted by this issue. Which of the following can provide the information?",
+        "answers": {
+            "correct": "DNS logs",
+            "incorrect": ["WAF logs", "System logs", "Application logs"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Server administrators want to configure a cloud solution so that computing memory and processor usage is maximized most efficiently across a number of virtual servers. They also need to avoid potential denial-of-service situations caused by availability. Which of the following should administrators configure to maximize system availability while efficiently utilizing available computing power?",
+        "answers": {
+            "correct": "Dynamic resource allocation",
+            "incorrect": ["High availability", "Segmentation", "Container security"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security engineer is deploying a new wireless network for a company. The company shares office space with multiple tenants. Which of the following should the engineer configure on the wireless network to ensure that confidential data is not exposed to unauthorized users?",
+        "answers": {
+            "correct": "AES",
+            "incorrect": ["EAP", "TLS", "HTTPS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A financial institution would like to store its customer data in a cloud but still allow the data to be accessed and manipulated while encrypted. Doing so would prevent the cloud service provider from being able to decipher the data due to its sensitivity. The financial institution is not concerned about computational overheads and slow speeds. Which of the following cryptographic techniques would BEST meet the requirement?",
+        "answers": {
+            "correct": "Homomorphic",
+            "incorrect": ["Asymmetric", "Symmetric", "Ephemeral"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security manager has tasked the security operations center with locating all web servers that respond to an unsecure protocol. Which of the following commands could an analyst run to find the requested servers?",
+        "answers": {
+            "correct": "nmap –p 80 10.10.10.0/24",
+            "incorrect": ["nslookup 10.10.10.0", "pathping 10.10.10.0 –p 80", "nc -1 –p 80"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security manager needs to assess the security posture of one of the organization's vendors. The contract with the vendor does not allow for auditing of the vendor's security controls. Which of the following should the manager request to complete the assessment?",
+        "answers": {
+            "correct": "A SOC 2 Type 2 report",
+            "incorrect": ["A service-level agreement", "A business partnership agreement", "A memorandum of understanding"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company wants the ability to restrict web access and monitor the websites that employees visit. Which of the following would BEST meet these requirements?",
+        "answers": {
+            "correct": "Internet proxy",
+            "incorrect": ["VPN", "WAF", "Firewall"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst was asked to evaluate a potential attack that occurred on a publicly accessible section of the company's website. The malicious actor posted an entry in an attempt to trick users into clicking the following: Which of the following was MOST likely observed?",
+        "answers": {
+            "correct": "XSS",
+            "incorrect": ["DLL injection", "Session replay", "SQLI"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is an example of transference of risk?",
+        "answers": {
+            "correct": "Purchasing insurance",
+            "incorrect": ["Patching vulnerable servers", "Retiring outdated applications", "Application owner risk sign-off"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An administrator needs to protect user passwords and has been advised to hash the passwords. Which of the following BEST describes what the administrator is being advised to do?",
+        "answers": {
+            "correct": "Perform a mathematical operation on the passwords that will convert them into unique strings",
+            "incorrect": ["Add extra data to the passwords so their length is increased making them harder to brute force", "Store all passwords in the system in a rainbow table that has a centralized location", "Enforce the use of one-time passwords that are changed for every login session"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An audit identified PII being utilized in the development environment of a critical application. The Chief Privacy Officer (CPO) is adamant that this data must be removed; however the developers are concerned that without real data they cannot perform functionality tests and search for specific data. Which of the following should a security professional implement to BEST satisfy both the CPO's and the development team's requirements?",
+        "answers": {
+            "correct": "Data anonymization",
+            "incorrect": ["Data encryption", "Data masking", "Data tokenization"]
+        },
+        "Explanation": "A fully anonymized data set is one where individual subjects can no longer be identified even if the data set is combined with other data sources. Identifying information is permanently removed."
+    },
+    {
+        "question": "To reduce and limit software and infrastructure costs the Chief Information Officer has requested to move email services to the cloud. The cloud provider and the organization must have security controls to protect sensitive data. Which of the following cloud services would BEST accommodate the request?",
+        "answers": {
+            "correct": "PaaS",
+            "incorrect": ["IaaS", "DaaS", "SaaS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Administrators have allowed employees to access their company email from personal computers. However, the administrators are concerned that these computers are another attack surface and can result in user accounts being breached by foreign actors. Which of the following actions would provide the MOST secure solution?",
+        "answers": {
+            "correct": "Enforce a policy that allows employees to be able to access their email only while they are connected to the internet via VPN",
+            "incorrect": ["Implement a 16-character minimum length and 30-day expiration password policy", "Enable an option in the administration center so accounts can be locked if they are accessed from different geographical areas", "Set up a global mail rule to disallow the forwarding of any company email to email addresses outside the organization"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security engineer needs to build a solution to satisfy regulatory requirements that state certain critical servers must be accessed using MFA. However, the critical servers are older and are unable to support the addition of MFA. Which of the following will the engineer MOST likely use to achieve this objective?",
+        "answers": {
+            "correct": "A jump server",
+            "incorrect": ["A forward proxy", "A stateful firewall", "A port tap"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following provides a catalog of security and privacy controls related to the United States federal information systems?",
+        "answers": {
+            "correct": "NIST 800-53",
+            "incorrect": ["GDPR", "PCI DSS", "ISO 27000"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "DDoS attacks are causing an overload on the cluster of cloud servers. A security architect is researching alternatives to make the cloud environment respond to load fluctuations in a cost-effective way. Which of the following options BEST fulfills the architect's requirements?",
+        "answers": {
+            "correct": "An orchestration solution that can adjust scalability of cloud assets",
+            "incorrect": ["Use of multipath by adding more connections to cloud storage", "Cloud assets replicated on geographically distributed regions", "An on-site backup that is deployed and only used when the load increases"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following explains why RTO is included in a BIA?",
+        "answers": {
+            "correct": "It identifies the amount of allowable downtime for an application or system",
+            "incorrect": ["It prioritizes risks so the organization can allocate resources appropriately", "It monetizes the loss of an asset and determines a break-even point for risk mitigation", "It informs the backup approach so that the organization can recover data to a known time"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "To track changes to software development use:",
+        "answers": {
+            "correct": "Version control",
+            "incorrect": ["Hashing", "Encryption", "Digital signatures"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Due to unexpected circumstances, an IT company must vacate its main office, forcing all operations to alternate off-site locations. Which of the following will the company MOST likely reference for guidance during this change?",
+        "answers": {
+            "correct": "The disaster recovery plan",
+            "incorrect": ["The business continuity plan", "The retention policy", "The incident response plan"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After a WiFi scan of a local office was conducted, an unknown wireless signal was identified. Upon investigation, an unknown Raspberry Pi device was found connected to an Ethernet port using a single connection. Which of the following BEST describes the purpose of this device?",
+        "answers": {
+            "correct": "Rogue access point",
+            "incorrect": ["IoT sensor", "Evil twin", "On-path attack"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Next Generation Secure Web Gateway (SWG) is a new cloud-native solution for protecting enterprises from the growing volume of sophisticated cloud-enabled threats and data risks. A SWG protects users from accessing infected external websites or undesirable content hosted outside of the organization. A WAF protects hosted web-based applications from attacks that are initiated by external attackers.",
+        "answers": {
+            "correct": "SWG",
+            "incorrect": ["WAF"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Hackers recently attacked a company's network and obtained several unfavorable pictures from the Chief Executive Officer’s workstation. The hackers are threatening to send the images to the press if a ransom is not paid. Which of the following is impacted the MOST?",
+        "answers": {
+            "correct": "Reputation",
+            "incorrect": ["Identity theft", "Data loss", "Data exfiltration"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A software company is analyzing a process that detects software vulnerabilities at the earliest stage possible. The goal is to scan the source looking for unsecure practices and weaknesses before the application is deployed in a runtime environment. Which of the following would BEST assist the company with this objective?",
+        "answers": {
+            "correct": "Use static code analysis",
+            "incorrect": ["Use fuzzing testing", "Use a web vulnerability scanner", "Use a penetration-testing OS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A penetration tester was able to compromise an internal server and is now trying to pivot the current session in a network lateral movement. Which of the following tools, if available on the server, will provide the MOST useful information for the next assessment step?",
+        "answers": {
+            "correct": "Nmap",
+            "incorrect": ["Autopsy", "Cuckoo", "Memdump"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is responding to an alert from the SIEM. The alert states that malware was discovered on a host and was not automatically deleted. Which of the following would be BEST for the analyst to perform?",
+        "answers": {
+            "correct": "Implement a network-wide scan for other instances of the malware",
+            "incorrect": ["Add a deny-all rule to that host in the network ACL", "Quarantine the host from other parts of the network", "Revoke the client's network access certificates"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following authentication methods sends out a unique password to be used within a specific number of seconds?",
+        "answers": {
+            "correct": "TOTP",
+            "incorrect": ["Biometrics", "Kerberos", "LDAP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following must be in place before implementing a BCP?",
+        "answers": {
+            "correct": "BIA",
+            "incorrect": ["SLA", "AUP", "NDA"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Multiple business accounts were compromised a few days after a public website had its credentials database leaked on the Internet. No business emails were identified in the breach but the security team thinks that the list of passwords exposed was later used to compromise business accounts. Which of the following would mitigate the issue?",
+        "answers": {
+            "correct": "Password history",
+            "incorrect": ["Complexity requirements", "Acceptable use policy", "Shared accounts"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A dynamic application vulnerability scan identified code injection could be performed using a web form. Which of the following will be BEST remediation to prevent this vulnerability?",
+        "answers": {
+            "correct": "Implement input validations",
+            "incorrect": ["Deploy MFA", "Utilize a WAF", "Configure HIPS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would be used to find the MOST common web-application vulnerabilities?",
+        "answers": {
+            "correct": "OWASP",
+            "incorrect": ["SDLC", "MITRE ATT&CK", "Cyber Kill Chain"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The board of doctors at a company contracted with an insurance firm to limit the organization's liability. Which of the following risk management practices does this decision BEST describe?",
+        "answers": {
+            "correct": "Transference",
+            "incorrect": ["Avoidance", "Mitigation", "Acknowledgement"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would be MOST effective to contain a rapid attack that is affecting a large number of organizations?",
+        "answers": {
+            "correct": "Blocklist",
+            "incorrect": ["Machine learning", "DNS sinkhole", "Honeypot"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A penetration tester gains access to the network by exploiting a vulnerability on a public-facing web server. Which of the following techniques will the tester most likely perform NEXT?",
+        "answers": {
+            "correct": "Move laterally throughout the network to search for sensitive information",
+            "incorrect": ["Gather more information about the target through passive reconnaissance", "Establish rules of engagement before proceeding", "Create a user account to maintain persistence"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would detect intrusions at the perimeter of an airport?",
+        "answers": {
+            "correct": "Fencing",
+            "incorrect": ["Signage", "Motion sensors", "Lighting", "Bollards"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An analyst just discovered an ongoing attack on a host that is on the network. The analyst observes the following taking place: The computer performance is slow, Ads are appearing from various pop-up windows, Operating system files are modified, The computer is receiving AV alerts for execution of malicious processes. Which of the following steps should the analyst consider FIRST?",
+        "answers": {
+            "correct": "Put the machine in containment",
+            "incorrect": ["Check to make sure the DLP solution is in the active state", "Patch the host to prevent exploitation", "Update the AV solution on the host to stop the attack"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company currently uses passwords for logging in to company-owned devices and wants to add a second authentication factor. Per corporate policy users are not allowed to have smartphones at their desks. Which of the following would meet these requirements?",
+        "answers": {
+            "correct": "Smart card",
+            "incorrect": ["PIN code", "Knowledge-based question", "Secret key"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The chief compliance officer from a bank has approved a background check policy for all new hires. Which of the following is the policy MOST likely protecting against?",
+        "answers": {
+            "correct": "Hiring an employee who has been convicted of theft to adhere to industry compliance",
+            "incorrect": ["Preventing any current employees' siblings from working at the bank to prevent nepotism", "Filtering applicants who have added false information to resumes so they appear better qualified", "Ensuring no new hires have worked at other banks that may be trying to steal customer information"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which biometric error would allow an unauthorized user to access a system?",
+        "answers": {
+            "correct": "False acceptance",
+            "incorrect": ["False entrance", "False rejection", "False denial"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would produce the closest experience of responding to an actual incident response scenario?",
+        "answers": {
+            "correct": "Simulation",
+            "incorrect": ["Lessons learned", "Walk-through", "Tabletop"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is concerned about intellectual property theft by employees who leave the organization. Which of the following will the organization MOST likely implement?",
+        "answers": {
+            "correct": "NDA",
+            "incorrect": ["CBT", "MOU", "AUP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization maintains several environments in which patches are developed and tested before deployed to an operation status. Which of the following is the environment in which patches will be deployed just prior to being put into an operational status?",
+        "answers": {
+            "correct": "Staging",
+            "incorrect": ["Development", "Test", "Production"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following control types would be BEST to use to identify violations and incidents?",
+        "answers": {
+            "correct": "Detective",
+            "incorrect": ["Compensating", "Deterrent", "Corrective", "Recovery", "Preventive"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst wants to fingerprint a web server. Which of the following tools will the security analyst MOST likely use to accomplish this task?",
+        "answers": {
+            "correct": "curl --head http://192.168.0.10",
+            "incorrect": ["nmap -p 1-65535 192.168.0.10", "dig 192.168.0.10", "ping 192.168.0.10"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A system that requires an operation availability of 99.99% and has an annual maintenance window available to patching and fixes will require the HIGHEST:",
+        "answers": {
+            "correct": "MTBF",
+            "incorrect": ["MTTR", "RPO", "RTO"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A local coffee shop runs a small Wi-Fi hotspot for its customers that utilizes WPA2-PSK. The coffee shop would like to stay current with security trends and wants to implement WPA3 to make its Wi-Fi even more secure. Which of the following technologies will the coffee shop MOST likely use in place of PSK?",
+        "answers": {
+            "correct": "SAE",
+            "incorrect": ["WEP", "MSCHAP", "WPS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During an incident a company's CIRT determines it is necessary to observe the continued network-based transactions between a callback domain and the malware running on an enterprise PC. Which of the following techniques would be BEST to enable this activity while reducing the risk of lateral spread and the risk that the adversary would notice any changes?",
+        "answers": {
+            "correct": "Create and apply micro segmentation rules.",
+            "incorrect": ["Physically move the PC to a separate Internet point of presence.", "Emulate the malware in a heavily monitored DMZ segment.", "Apply network blacklisting rules for the adversary domain."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following should a technician consider when selecting an encryption method for data that needs to remain confidential for a specific length of time?",
+        "answers": {
+            "correct": "The encryption algorithm's longevity",
+            "incorrect": ["The key length of the encryption algorithm", "A method of introducing entropy into key calculations", "The computational overhead of calculating the encryption key"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following employee roles is responsible for protecting an organization's collected personal information?",
+        "answers": {
+            "correct": "DPO",
+            "incorrect": ["CTO", "CEO", "DBA"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization's Chief Information Security Officer is creating a position that will be responsible for implementing technical controls to protect data including ensuring backups are properly maintained. Which of the following roles would MOST likely include these responsibilities?",
+        "answers": {
+            "correct": "Data custodian",
+            "incorrect": ["Data protection officer", "Data owner", "Backup administrator", "Internal auditor"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "After a ransomware attack you need to review a cryptocurrency transaction made by the victim. Which of the following you MOST likely review to trace this transaction?",
+        "answers": {
+            "correct": "The public ledger",
+            "incorrect": ["The NetFlow data", "A checksum", "The event log"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Symmetric cryptography can efficiently:",
+        "answers": {
+            "correct": "Protect large amounts of data",
+            "incorrect": ["Perform key exchange", "Hash data", "Provide non-repudiation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Due to a weakness in the company’s currently implemented hashing algorithm a technician added a randomly generated value to the password before storing it. What is best description of this action?",
+        "answers": {
+            "correct": "Salting",
+            "incorrect": ["Predictability", "Key Stretching", "Hashing"]
+        },
+        "Explanation": "In cryptography, a 'salt' is pseudo-random data that is used as an additional input when hashing a password or passphrase to make them stronger/harder to crack."
+    },
+    {
+        "question": "A penetration tester has found a domain controller using 3DES to encrypt authentication messages. What problem has the penetration tester identified?",
+        "answers": {
+            "correct": "Weak encryption",
+            "incorrect": ["Unsecure protocols", "Default settings", "Open permissions"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would MOST likely support the integrity of a banking application?",
+        "answers": {
+            "correct": "Blockchain",
+            "incorrect": ["Perfect forward secrecy", "Transport Layer Security", "Asymmetric encryption"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company would like to get one SSL certificate that can cover both of their application servers ftp@example.com and www.example.com. Furthermore this certificate should be able to cover any future application servers that the company may add of a similar naming convention such as smtp.example.com. What type of SSL certificate would best fit their needs?",
+        "answers": {
+            "correct": "Wildcard",
+            "incorrect": ["Self-signed", "SAN", "Extended validation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A server certificate needs to be generated to be used for 802.1X. Which of the following is the FIRST step that will most likely accomplish this task?",
+        "answers": {
+            "correct": "Generate a CSR.",
+            "incorrect": ["Create an OCSP.", "Create a CRL.", "Generate a .pfx file."]
+        },
+        "Explanation": "CSR – Certificate Signing Request: This is sent to a CA to begin the process of certificate creation."
+    },
+    {
+        "question": "While deploying TLS certificates on your air-gapped private network you determine that you need the ability to check revoked certificates quickly. Which of the following would best fit these requirements?",
+        "answers": {
+            "correct": "CRL",
+            "incorrect": ["RA", "OCSP", "CSR"]
+        },
+        "Explanation": "CRL (Certificate Revocation List) is suitable for air-gapped networks as it does not require an online connection."
+    },
+    {
+        "question": "A SOC is currently being outsourced. Which of the following is being used?",
+        "answers": {
+            "correct": "MSSP",
+            "incorrect": ["Microservices", "SaaS", "PaaS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is investigating a phishing email that contains a malicious document directed to the company's Chief Executive Officer (CEO). Which of the following should the analyst perform to understand the threat and retrieve possible IoCs?",
+        "answers": {
+            "correct": "Install a sandbox to run the malicious payload in a safe environment",
+            "incorrect": ["Run a vulnerability scan against the CEO's computer to find possible vulnerabilities", "Perform a traceroute to identify the communication path", "Use netstat to check whether communication has been made with a remote host"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following controls would BEST identify and report malicious insider activities?",
+        "answers": {
+            "correct": "Audit trails",
+            "incorrect": ["An intrusion detection system", "A proxy", "Strong authentication"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company recently experienced an attack during which its main website was directed to the attacker’s web server allowing the attacker to harvest credentials from unsuspecting customers. Which of the following should the company implement to prevent this type of attack occurring in the future?",
+        "answers": {
+            "correct": "DNSSEC",
+            "incorrect": ["IPSec", "SSL/TLS", "S/MIME"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Security analyst must enforce policies to harden an MDM infrastructure. The requirements are as follows: Ensure mobile devices can be traced and wiped. Confirm mobile devices are encrypted. Which of the following should the analyst enable on all the devices to meet these requirements?",
+        "answers": {
+            "correct": "Geolocation",
+            "incorrect": ["Geofencing", "Biometric authentication", "Geotagging"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user downloaded an extension for a browser and the user device later became infected. The analyst who is investigating the incident saw various logs where the attacker was hiding activity by deleting data. The following was observed running: Which of the following is the malware using to execute the attack?",
+        "answers": {
+            "correct": "PowerShell",
+            "incorrect": ["Python", "Bash", "Macros"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An engineer needs to deploy a security measure to identify and prevent data tampering within the enterprise. Which of the following will accomplish this goal?",
+        "answers": {
+            "correct": "FIM",
+            "incorrect": ["Antivirus", "IPS", "FTP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "When planning to build a virtual environment an administrator needs to achieve the following: Establish policies and limit who can create new VMs, Allocate resources according to actual utilization, Require justification for requests outside of the standard requirements, Create standardized categories based on size and resource requirements. Which of the following is the administrator MOST likely trying to do?",
+        "answers": {
+            "correct": "Avoid VM sprawl",
+            "incorrect": ["Implement IaaS replication", "Protect against VM escape", "Deploy a PaaS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst has received several reports of an issue on an internal web application. Users state they are having to provide their credential twice to log in. The analyst checks with the application team and notes this is not expected behavior. After looking at several logs the analyst decides to run some commands on the gateway and obtains the following output: Which of the following BEST describes the attack the company is experiencing?",
+        "answers": {
+            "correct": "ARP poisoning",
+            "incorrect": ["MAC flooding", "URL redirection", "DNS hijacking"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An analyst is generating a security report for the management team. Security guidelines recommend disabling all listening unencrypted services. Given this output from Nmap: Which of the following should the analyst recommend to disable?",
+        "answers": {
+            "correct": "23/tcp",
+            "incorrect": ["21/tcp", "22/tcp", "443/tcp"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The Chief Information Security Officer wants to pilot a new adaptive user-based authentication method. The concept includes granting logical access based on physical location and proximity. Which of the following is the BEST solution for the pilot?",
+        "answers": {
+            "correct": "Geofencing",
+            "incorrect": ["Self-sovereign identification", "PKI certificates", "SSO"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would satisfy three-factor authentication?",
+        "answers": {
+            "correct": "Password, retina scanner, and NFC card",
+            "incorrect": ["Password, fingerprint scanner, and retina scanner", "Password, hard token, and NFC card", "Fingerprint scanner, hard token, and retina scanner"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which two features are available only in next-generation firewalls? (Choose two)",
+        "answers": {
+            "correct": ["Deep packet inspection", "Application awareness"],
+            "incorrect": ["Packet filtering", "Stateful inspection", "Virtual private network"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A developer is building a new portal to deliver single-pane-of-glass management capabilities to customers with multiple firewalls. To improve the user experience the developer wants to implement an authentication and authorization standard that uses security tokens that contain assertions to pass user information between nodes. Which of the following roles should the developer configure to meet these requirements? (Select TWO).",
+        "answers": {
+            "correct": ["Identity provider", "Service provider"],
+            "incorrect": ["Identity processor", "Service requestor", "Tokenized resource", "Notarized referral"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst was deploying a new website and found a connection attempting to authenticate on the site's portal. While investigating the incident the analyst identified the following input in the username field: Which of the following BEST describes the attack?",
+        "answers": {
+            "correct": "SQLi on the field to bypass authentication",
+            "incorrect": ["DLL injection to hijack administrator services", "Execution of a stored XSS on the website", "Code to execute a race condition on the server"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Developers are writing code and merging it into shared repositories several times a day where it is tested automatically. Which of the following concepts does this BEST represent?",
+        "answers": {
+            "correct": "Continuous integration",
+            "incorrect": ["Functional testing", "Stored procedures", "Elasticity"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following environments would MOST likely be used to assess the execution of component parts of a system at both the hardware and software levels and to measure performance characteristics?",
+        "answers": {
+            "correct": "Test",
+            "incorrect": ["Staging", "Development", "Production"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Remote workers in an organization use company-provided laptops with locally installed applications and locally stored data. Users can store data on a remote server using an encrypted connection. The organization discovered data stored on a laptop had been made available to the public. Which of the following security solutions would mitigate the risk of future data disclosures?",
+        "answers": {
+            "correct": "FDE",
+            "incorrect": ["TPM", "HIDS", "VPN"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A grocery store is expressing security and reliability concerns regarding the on-site backup strategy currently being performed by locally attached disks. The main concerns are the physical security of the backup media and the durability of the data stored on these devices. Which of the following is a cost-effective approach to address these concerns?",
+        "answers": {
+            "correct": "Migrate to a cloud backup solution",
+            "incorrect": ["Enhance resiliency by adding a hardware RAID", "Move data to a tape library and store the tapes off site", "Install a local network-attached storage"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A systems administrator is looking for a solution that will help prevent OAuth applications from being leveraged by hackers to trick users into authorizing the use of their corporate credentials. Which of the following BEST describes this solution?",
+        "answers": {
+            "correct": "CASB",
+            "incorrect": ["UEM", "WAF", "VPC"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Web server A is unreachable from the corporate branch office. Review the stateful firewall below. Which of the options below would resolve the problem while ensuring the web traffic is secure?",
+        "answers": {
+            "correct": "Add a rule 'permit source 172.30.1.0/24 to destination 172.30.2.1/24 HTTPS'",
+            "incorrect": ["Add a rule 'permit source 172.30.2.1/24 to destination 172.30.1.0/24 HTTP'", "Add a rule 'permit source 172.30.3.0/24 to destination 172.30.2.1/24 HTTP'", "Add a rule 'permit source 172.30.1.0/24 to destination 172.30.2.1/24 HTTP'", "Add a rule 'permit source 172.30.2.1/24 to destination 172.30.1.0/24 HTTPS'", "Add a rule 'permit source 172.30.3.0/24 to destination 172.30.2.1/24 HTTPS'"]
+        },
+        "Explanation": "We want HTTPS. The correct direction is branch office as the source and web server as the destination."
+    },
+    {
+        "question": "A company wants to deploy systems alongside production systems in order to entice threat actors and to learn more about attackers. Which of the following BEST describe these systems?",
+        "answers": {
+            "correct": "Honeypots",
+            "incorrect": ["DNS sinkholes", "Virtual machines", "Neural network"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company recently experienced an attack in which a malicious actor was able to exfiltrate data by cracking stolen passwords using a rainbow table on sensitive data. Which of the following should a security engineer do to prevent such an attack in the future?",
+        "answers": {
+            "correct": "Implement password salting",
+            "incorrect": ["Use password hashing", "Enforce password complexity", "Disable password reuse"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is concerned about traffic initiated to the dark web from the corporate LAN. Which of the following should the analyst monitor?",
+        "answers": {
+            "correct": "Tor",
+            "incorrect": ["SFTP", "AS", "IoC"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The website http://companywebsite.com requires users to provide personal Information Including security question responses for registration. Which of the following would MOST likely cause a data breach?",
+        "answers": {
+            "correct": "Unsecure protocol",
+            "incorrect": ["Lack of input validation", "Open permissions", "Missing patches"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A new vulnerability in the SMB protocol on the Windows systems was recently discovered but no patches are currently available to resolve the issue. The security administrator is concerned the servers in the company's DMZ will be vulnerable to external attack; however the administrator cannot disable the service on the servers as SMB is used by a number of internal systems and applications on the LAN. Which of the following TCP ports should be blocked for all external inbound connections to the DMZ as a workaround to protect the servers? (Select TWO).",
+        "answers": {
+            "correct": ["135", "445"],
+            "incorrect": ["139", "143", "161", "443"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is reviewing the following command-line output: Which of the following BEST describes this type of attack?",
+        "answers": {
+            "correct": "MAC address cloning",
+            "incorrect": ["IGMP spoofing", "URL redirection", "DNS poisoning"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A web server that requires both encrypted and unencrypted web traffic is utilizing default ports. Which of the following changes should be made to the firewall below? Firewall rules: Port Status 22 Open 25 Filtered 53 Filtered 80 Open 443 Open",
+        "answers": {
+            "correct": "Block 22 from the internet",
+            "incorrect": ["Allow 53 from the internet", "Block 25 from the internet", "Block 443 from the internet", "Block 80 from the internet"]
+        },
+        "Explanation": "Only web traffic is required to the web server."
+    },
+    {
+        "question": "Which of the following BEST describes the method a security analyst would use to confirm a file that is downloaded from a trusted security website is not altered in transit or corrupted using a verified checksum?",
+        "answers": {
+            "correct": "Hashing",
+            "incorrect": ["Salting", "Integrity", "Digital signature"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which type of RAID would allow for recovery even after two drive failures?",
+        "answers": {
+            "correct": "RAID 6",
+            "incorrect": ["RAID 0", "RAID 1", "RAID 5"]
+        },
+        "Explanation": "RAID 6 can support two drive failures. RAID 1 and 5 can only support a single failure while RAID 0 has no fault tolerance."
+    },
+    {
+        "question": "A network engineer notices the VPN concentrator overloads and crashes on days when there are a lot of remote workers. Senior management has placed greater importance on the availability of VPN resources for the remote workers than the security of the end users’ traffic. Which of the following would be BEST to solve this issue?",
+        "answers": {
+            "correct": "Split Tunneling",
+            "incorrect": ["IPSec", "Always On", "L2TP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following security architecture components are integral parts of implementing WPA2-Enterprise utilizing EAP-TLS? (Pick Two)",
+        "answers": {
+            "correct": ["PKI", "RADIUS"],
+            "incorrect": ["DNSSEC", "Reverse Proxy", "VPN Concentrator", "Active Directory"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user's PC was recently infected by malware. The user has a legacy printer without vendor support and the user's OS is fully patched. The user downloaded a driver package from the internet. No threats were found on the downloaded file but during file installation a malicious runtime threat was detected. Which of the following is MOST likely cause of the infection?",
+        "answers": {
+            "correct": "The driver has malware installed and was refactored upon download to avoid detection.",
+            "incorrect": ["The user's computer has a rootkit installed that has avoided detection until the new driver overwrote key files.", "The user's antivirus software definition were out of date and were damaged by the installation of the driver", "The user's computer has been infected with a logic bomb set to run when new driver was installed."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security engineer needs to create a network segment that can be used for servers that require connections from untrusted networks. Which of the following should the engineer implement?",
+        "answers": {
+            "correct": "A screened subnet",
+            "incorrect": ["An air gap", "A hot site", "A VLAN"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An unmonitored security camera would be what type of control?",
+        "answers": {
+            "correct": "Deterrent",
+            "incorrect": ["Detective", "Physical", "Preventative"]
+        },
+        "Explanation": "A security guard who was watching through the camera could be detective. However the camera especially one that is unmonitored would be strictly a deterrent for would be criminals."
+    },
+    {
+        "question": "Entering a secure area requires passing through two doors both of which require someone who is already inside to initiate access. Which of the following types of physical security controls does this describe?",
+        "answers": {
+            "correct": "Access control vestibule",
+            "incorrect": ["Cameras", "Faraday cage", "Sensors", "Guards"]
+        },
+        "Explanation": "A mantrap access control vestibule sally port or air lock: A physical security access control system comprising a small room with two sets of interlocking doors such that the first set of doors must close before the second set opens. This mechanism seeks to eliminate the threat of piggybacking or tailgating."
+    },
+    {
+        "question": "Which of the following native tools would allow a technician to view services running on a system as well the associated listening ports?",
+        "answers": {
+            "correct": "Netstat",
+            "incorrect": ["Netcat", "Nmap", "Nessus"]
+        },
+        "Explanation": "Netstat can show you all of your active connections and open/listening ports. Furthermore if you use “-o” it will show you which currently running processes/services opened those connections/ports. Most conventional operating systems have netstat built in (native)."
+    },
+    {
+        "question": "Which one of the tools below could be used to find out if the corporate server is running unnecessary services?",
+        "answers": {
+            "correct": "Nmap",
+            "incorrect": ["DNSEnum", "Wireshark", "Autopsy"]
+        },
+        "Explanation": "Nmap short for network mapper is capable of port scanning the network and determining what services are running on any hosts that are detected. DNSEnum is a command-line tool that automatically identifies basic DNS records. Wireshark is a protocol analyzer and packet sniffer that is used for gathering sorting and analyzing traffic from a network. Autopsy is a tool for performing data forensics."
+    },
+    {
+        "question": "A systems analyst is responsible for generating a new digital forensics chain-of-custody form. Which of the following should the analyst include in this documentation? (Select TWO).",
+        "answers": {
+            "correct": ["The location of the artifacts", "The date and time"],
+            "incorrect": ["The order of volatility", "A checksum", "The vendor's name", "A warning banner"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "As part of an investigation a forensics expert has been given a massive packet capture for analysis full of HTTP requests. They need to view the first few requests and then search for a specific string that indicates the compromise. Which of the options below would allow them to perform this action quickly and efficiently? (Pick two)",
+        "answers": {
+            "correct": ["head", "grep"],
+            "incorrect": ["openssl", "dd", "tail", "curl", "tcpdump"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is investigating a malware incident at a company. The malware is accessing a command-and-control website at www.comptia.com. All outbound internet traffic is logged to a syslog server and stored in /logfiles/messages. Which of the following commands would be BEST for the analyst to use on the syslog server to search for recent traffic to the command-and-control website?",
+        "answers": {
+            "correct": "Option C",
+            "incorrect": ["Option A", "Option B", "Option D"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security researcher is tracking an adversary by noting its attack and techniques based on its capabilities infrastructure and victims. Which of the following is the researcher MOST likely using?",
+        "answers": {
+            "correct": "The Diamond Model of Intrusion Analysis",
+            "incorrect": ["The Cyber Kill Chain", "The MITRE CVE database", "The incident response process"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is an example of risk avoidance?",
+        "answers": {
+            "correct": "Not installing new software to prevent compatibility errors",
+            "incorrect": ["Installing security updates directly in production to expedite vulnerability fixes", "Buying insurance to prepare for financial loss associated with exploits", "Not taking preventive measures to stop the theft of equipment"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following would document concerns associated with the restoration of IT systems in the event of a flood earthquake or hurricane?",
+        "answers": {
+            "correct": "Disaster recovery plan",
+            "incorrect": ["Business continuity plan", "Communications plan", "Continuity of operations plan"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "While preparing a demonstration for employees of your company you need to identify a method for determining tactics techniques and procedures of threats against your network. Which of the following would you most likely use?",
+        "answers": {
+            "correct": "MITRE ATT&CK",
+            "incorrect": ["A tabletop Exercise", "NIST CSF", "OWASP"]
+        },
+        "Explanation": "MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. It is a great source of free intelligence!"
+    },
+    {
+        "question": "Your company wants to build another office that is expected to cost two million dollars. The town that this new office will be built in has a history of terrible earthquakes once every 50 years. The estimated damage is 50% of the building's cost. What is the SLE (Single Loss Expectancy)?",
+        "answers": {
+            "correct": "1000000",
+            "incorrect": ["20000", "40000", "500000", "4000000"]
+        },
+        "Explanation": "We are given the AV (Asset Value), EF (Exposure Factor), and ARO (Annual Rate of Occurrence). We need to solve for SLE (Single Loss Expectancy). AV x EF = SLE; 2 Million * 0.5 = 1 Million."
+    },
+    {
+        "question": "Which of the following is a difference between a DRP and a BCP?",
+        "answers": {
+            "correct": "A BCP prepares for any operational interruption while a DRP prepares for natural disasters",
+            "incorrect": ["A BCP keeps operations running during a disaster while a DRP does not.", "A BCP is a technical response to disasters while a DRP is operational.", "A BCP is formally written and approved while a DRP is not."]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following describes a maintenance metric that measures the average time required to troubleshoot and restore failed equipment?",
+        "answers": {
+            "correct": "MTTR",
+            "incorrect": ["RTO", "MTBF", "RPO"]
+        },
+        "Explanation": "Mean time to repair (MTTR) is a measure of the maintainability of a repairable item which tells the average time required to repair a specific item or component and return it to working status."
+    },
+    {
+        "question": "A Chief Information Officer receives an email stating a database will be encrypted within 24 hours unless a payment of $20000 is credited to the account mentioned in the email. This BEST describes a scenario related to:",
+        "answers": {
+            "correct": "whaling",
+            "incorrect": ["smishing", "spear phishing", "vishing"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following uses six initial steps that provide basic control over system security by including hardware and software inventory vulnerability management and continuous monitoring to minimize risk in all network environments?",
+        "answers": {
+            "correct": "The Center for Internet Security",
+            "incorrect": ["ISO 27701", "SSAE SOC 2", "NIST Risk Management Framework"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following holds staff accountable while escorting unauthorized personnel?",
+        "answers": {
+            "correct": "Visitor logs",
+            "incorrect": ["Locks", "Badges", "Cameras"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following corporate policies is used to help prevent employee fraud and to detect system log modifications or other malicious activity based on tenure?",
+        "answers": {
+            "correct": "Separation of duties",
+            "incorrect": ["Background checks", "Mandatory vacation", "Social media analysis"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The SIEM at an organization has detected suspicious traffic coming to a workstation in its internal network. An analyst in the SOC discovers malware that is associated with a botnet is installed on the device. A review of the logs on the workstation reveals that the privileges of the local account were escalated to a local administrator. To which of the following groups should the analyst report this real-world event?",
+        "answers": {
+            "correct": "The CIRT",
+            "incorrect": ["The NOC team", "The vulnerability management team", "The red team"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is required to continue using legacy software to support a critical service. Which of the following BEST explains a risk of this practice?",
+        "answers": {
+            "correct": "Lack of vendor support",
+            "incorrect": ["Default system configuration", "Unsecure protocols", "Weak encryption"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is a reason to publish files’ hashes?",
+        "answers": {
+            "correct": "To validate the integrity of the files",
+            "incorrect": ["To verify if the software was digitally signed", "To use the hash as a software activation key", "To use the hash as a decryption passphrase"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company has a flat network that is deployed in the cloud. Security policy states that all production and development servers must be segmented. Which of the following should be used to design the network to meet the security requirements?",
+        "answers": {
+            "correct": "VLAN",
+            "incorrect": ["VPN", "Screened subnet", "WAF"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is under investigation for possible fraud. As part of the investigation the authorities need to review all emails and ensure data is not deleted. Which of the following should the company implement to assist in the investigation?",
+        "answers": {
+            "correct": "Legal hold",
+            "incorrect": ["Chain of custody", "Data loss prevention", "Content filter"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following techniques eliminates the use of rainbow tables for password cracking?",
+        "answers": {
+            "correct": "Salting",
+            "incorrect": ["Hashing", "Tokenization", "Asymmetric encryption"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A chief Information Security Officer wants to ensure the organization is validating and checking the integrity of zone transfers. Which of the following solutions should be implemented?",
+        "answers": {
+            "correct": "DNSSEC",
+            "incorrect": ["LDAPS", "NGFW", "DLP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company’s security team received notice of a critical vulnerability affecting a high-profile device within the web infrastructure. The vendor patch was just made available online but has not yet been regression tested in development environments. In the interim firewall rules were implemented to reduce the access to the interface affected by the vulnerability. Which of the following controls does this scenario describe?",
+        "answers": {
+            "correct": "Compensating",
+            "incorrect": ["Deterrent", "Detective", "Preventive"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company recently decided to allow its employees to use their personal owned devices for tasks like checking email and messaging via mobile applications. The company would like to use MDM but employees are concerned about the loss of personal data. Which of the following should the IT department implement to BEST protect the company against lost devices while still addressing the employees’ concerns?",
+        "answers": {
+            "correct": "Enable the remote-wiping option in the MDM software in case the phone is stolen",
+            "incorrect": ["Configure the MDM software to enforce the use of PINs to access the phone", "Configure MDM for FDE without enabling the lock screen", "Perform a factory reset on the phone before installing the company’s applications"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "The president of a regional bank likes to frequently provide SOC tours to potential investors. Which of the following polices BEST reduces the risk of malicious activity occurring after a tour?",
+        "answers": {
+            "correct": "Access control",
+            "incorrect": ["Password complexity", "Acceptable use", "Clean desk"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user wanted to catch up on some work over the weekend but had issues logging in to the corporate network using a VPN. On Monday the user opened a ticket for this issue but was able to log in successfully. Which of the following BEST describes the policy that is being implemented?",
+        "answers": {
+            "correct": "Time-based logins",
+            "incorrect": ["Geofencing", "Network location", "Password history"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security architect is required to deploy to conference rooms some workstations that will allow sensitive data to be displayed on large screens. Due to the nature of the data it cannot be stored in the conference rooms. The fileshare is located in a local data center. Which of the following should the security architect recommend to BEST meet the requirements?",
+        "answers": {
+            "correct": "VDI and thin clients",
+            "incorrect": ["Fog computing and KVMs", "Private cloud and DLP", "Full drive encryption and thick clients"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An attacker has determined the best way to impact operations is to infiltrate third-party software vendors. Which of the following vectors is being exploited?",
+        "answers": {
+            "correct": "Supply chain",
+            "incorrect": ["Social media", "Cloud", "Social engineering"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An engineer wants to implement an authentication system using EAP-TLS. Which of the following solutions should be implemented?",
+        "answers": {
+            "correct": "802.1x",
+            "incorrect": ["SAML", "LDAPS", "OpenID"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company has decided to implement a control that fixes a vulnerability and mitigates a risk. Which of the following controls does this scenario describe?",
+        "answers": {
+            "correct": "Corrective",
+            "incorrect": ["Deterrent", "Compensating", "Detective"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which control type can make a company aware of an initial data compromise?",
+        "answers": {
+            "correct": "Detective",
+            "incorrect": ["Deterrent", "Compensating", "Corrective"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "What social engineering attack would exploit a sense of urgency?",
+        "answers": {
+            "correct": "An email stating that a settlement will expire soon",
+            "incorrect": ["A link redirection to a fake website", "A phone call impersonating technical support personnel", "An email with instructions to download security software"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "On the way into a secure building an unknown individual strikes up a conversation with an employee. The employee scans the required badge at the door while the unknown individual holds the door open seemingly out of courtesy for the employee. Which of the following social engineering techniques is being utilized?",
+        "answers": {
+            "correct": "Tailgating",
+            "incorrect": ["Shoulder surfing", "Watering-hole attack", "Impersonation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Users are presented with a banner upon each login to a workstation. The banner mentions that users are not entitled to any reasonable expectation of privacy and access is for authorized personnel only. In order to proceed past that banner users must click the OK button. Which of the following is this an example of?",
+        "answers": {
+            "correct": "AUP",
+            "incorrect": ["NDA", "SLA", "MOU"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An internet company has created a new collaboration application. To expand the user base the company wants to implement an option that allows users to log in to the application with the credentials of other popular websites. Which of the following should the company implement?",
+        "answers": {
+            "correct": "OpenID",
+            "incorrect": ["SSO", "CHAP", "802.1X"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A user reports falling for a phishing email to an analyst. Which of the following system logs would the analyst check FIRST?",
+        "answers": {
+            "correct": "DNS",
+            "incorrect": ["Message gateway", "Network", "Authentication"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company discovered that terabytes of data have been exfiltrated over the past year after an employee clicked on an email link. The threat continued to evolve and remain undetected until a security analyst noticed an abnormal amount of external connections when the employee was not working. Which of the following is the MOST likely threat actor?",
+        "answers": {
+            "correct": "APT",
+            "incorrect": ["Shadow IT", "Script kiddies", "Insider threat"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A Chief Security Officer is looking for a solution that can provide increased scalability and flexibility for back-end infrastructure allowing it to be updated and modified without disruption to services. The security architect would like the solution selected to reduce the back-end server resources and has highlighted that session persistence is not important for the applications running on the back-end servers. Which of the following would BEST meet the requirements?",
+        "answers": {
+            "correct": "Reverse proxy",
+            "incorrect": ["Automated patch management", "Snapshots", "NIC teaming"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A research company discovered that an unauthorized piece of software has been detected on a small number of machines in its lab. The researchers collaborate with other machines using port 445 and on the internet using port 443. The unauthorized software is starting to be seen on additional machines outside of the lab and is making outbound communications using HTTPS and SMB. The security team has been instructed to resolve the problem as quickly as possible causing minimal disruption to the researchers. Which of the following contains the BEST course of action in this scenario?",
+        "answers": {
+            "correct": "Place the unauthorized application in a blocklist",
+            "incorrect": ["Update the host firewalls to block outbound SMB", "Place the machines with the unapproved software in containment", "Implement a content filter to block the unauthorized software communication"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following can be used by a monitoring tool to compare values and detect password leaks without providing the actual credentials?",
+        "answers": {
+            "correct": "Hashing",
+            "incorrect": ["Tokenization", "Masking", "Encryption"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A technician was dispatched to complete repairs on a server in a data center. While locating the server the technician entered a restricted area without authorization. Which of the following security controls would BEST prevent this in the future?",
+        "answers": {
+            "correct": "Enforce escorts to monitor all visitors",
+            "incorrect": ["Use appropriate signage to mark all areas", "Utilize cameras monitored by guards", "Implement access control vestibules"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is moving its retail website to a public cloud provider. The company wants to tokenize credit card data but not allow the cloud provider to see the stored credit card information. Which of the following would BEST meet these objectives?",
+        "answers": {
+            "correct": "CASB",
+            "incorrect": ["WAF", "VPN", "TLS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following are the BEST ways to implement remote home access to a company's intranet systems if establishing an always-on VPN is not an option? (Select Two)",
+        "answers": {
+            "correct": ["Establish SSH access to a jump server", "Enable MFA for intranet systems"],
+            "incorrect": ["Install VPN concentrations at home offices", "Create NAT on the firewall for intranet systems", "Implement a SSO solution", "Configure SNMPv3 server and clients"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is tasked with defining the 'something you are' factor of the company’s MFA settings. Which of the following is BEST to use to complete the configuration?",
+        "answers": {
+            "correct": "Vein",
+            "incorrect": ["Gait analysis", "Soft token", "HMAC-based one-time password"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is a targeted attack aimed at compromising users within a specific industry or group?",
+        "answers": {
+            "correct": "Watering hole",
+            "incorrect": ["Typosquatting", "Hoax", "Impersonation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following uses SAML for authentication?",
+        "answers": {
+            "correct": "Federation",
+            "incorrect": ["TOTP", "Kerberos", "HOTP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is planning to roll out a new mobile device policy and issue each employee a new laptop. These laptops would access the user corporate operating system remotely and allow them to use the laptops for purposes outside of their job roles. Which of the following deployment models is being utilized?",
+        "answers": {
+            "correct": "COPE and VDI",
+            "incorrect": ["MDM and application management", "BYOD and containers", "CYOD and VMs"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An administrator is configuring a firewall rule set for a subnet to only access DHCP web pages and SFTP and to specifically block FTP. Which of the following would BEST accomplish this goal?",
+        "answers": {
+            "correct": "Allow: Any Any 80, Allow: Any Any 443, Allow: Any Any 67, Allow: Any Any 68, Allow: Any Any 22, Deny: Any Any 21, Deny: Any Any",
+            "incorrect": ["Allow: Any Any 80, Allow: Any Any 443, Allow: Any Any 67, Allow: Any Any 68, Deny: Any Any 22, Allow: Any Any 21, Deny: Any Any", "Allow: Any Any 80, Allow: Any Any 443, Allow: Any Any 22, Deny: Any Any 67, Deny: Any Any 68, Deny: Any Any 21, Allow: Any Any", "Allow: Any Any 80, Allow: Any Any 443, Deny: Any Any 67, Allow: Any Any 68, Allow: Any Any 22, Allow: Any Any 21, Allow: Any Any"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "While investigating a recent security incident a security analyst decided to view all network connections on a particular server. Which of the following would provide the desired information?",
+        "answers": {
+            "correct": "netstat",
+            "incorrect": ["arp", "nslookup", "nmap"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An untrusted SSL certificate was discovered during the most recent vulnerability scan. A security analyst determines the certificate is signed properly and is a valid wildcard. This same certificate is installed on other company servers without issue. Which of the following is the MOST likely reason for this finding?",
+        "answers": {
+            "correct": "The required intermediate certificate is not loaded as part of the certificate chain",
+            "incorrect": ["The certificate is on a CRL and is no longer valid", "The corporate CA has expired on every server causing the certificate to fail verification", "The scanner is incorrectly configured to not trust this certificate when detected on the server"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization just implemented a new security system. Local laws state that citizens must be notified prior to encountering the detection mechanism to deter malicious activities. Which of the following is being implemented?",
+        "answers": {
+            "correct": "Fence with electricity",
+            "incorrect": ["Proximity cards with guards", "Drones with alarms", "Motion sensors with signage"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is the BEST action to foster a consistent and auditable incident response process?",
+        "answers": {
+            "correct": "Publish the document in a central repository that is easily accessible to the organization",
+            "incorrect": ["Incent new hires to constantly update the document with external knowledge", "Restrict eligibility to comment on the process to subject matter experts of each IT silo", "Rotate CIRT members to foster a shared responsibility model in the organization"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A news article states hackers have been selling access to IoT camera feeds. Which of the following is the MOST likely reason for this issue?",
+        "answers": {
+            "correct": "Weak credentials",
+            "incorrect": ["Outdate software", "Lack of encryption", "Backdoors"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following in the incident response process is the BEST approach to improve the speed of the identification phase?",
+        "answers": {
+            "correct": "Increase the number of sensors present on the environment",
+            "incorrect": ["Activate verbose logging in all critical assets", "Tune monitoring in order to reduce false positives rates", "Redirects all events to multiple syslog servers"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company wants to build a new website to sell products. The website will host a storefront application that will allow visitors to add products to a shopping cart and pay for the products using a credit card. Which of the following protocols would be the MOST secure to implement?",
+        "answers": {
+            "correct": "TLS",
+            "incorrect": ["SSL", "SFTP", "SNMP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is hardening a network infrastructure. The analyst is given the following requirements: Preserve the use of public IP addresses assigned to equipment on the core router, Enable 'in transport' encryption protection to the web server with the strongest cipher. Which of the following should the analyst implement to meet these requirements? (Select two)",
+        "answers": {
+            "correct": ["Configure NAT on the core router", "Enable TLSv2 encryption on the web server"],
+            "incorrect": ["Configure VLANs on the core router", "Configure BGP in the core router", "Enable AES encryption on the web server", "Enable 3DES encryption on the web server"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security engineer is reviewing the logs from a SAML application that is configured to use MFA. During this review the engineer notices a high volume of successful logins that did not require MFA from users who were travelling internationally. The application which can be accessed without a VPN has a policy that allows time-based tokens to be generated. Users who change locations should be required to reauthenticate but have been able to log in without doing so. Which of the following statements BEST explains the issue?",
+        "answers": {
+            "correct": "The user’s IP address is changing between logins but the application is not invalidating the token",
+            "incorrect": ["OpenID is mandatory to make the MFA requirements work", "An incorrect browser has been detected by the SAML application", "The access device has a trusted certificate installed that is overwriting the session token"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "While reviewing the wireless router a systems administrator of a small business determines someone is spoofing the MAC address of an authorized device. Given the table below, which of the following should be the administrator’s NEXT step to detect if there is a rogue system without impacting availability?",
+        "answers": {
+            "correct": "Physically check each system",
+            "incorrect": ["Conduct a ping sweep", "Deny internet access to the 'UNKNOWN' hostname", "Apply MAC filtering"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is evaluating the risks of authorizing multiple security solutions to collect data from the company’s cloud environment. Which of the following is an immediate consequence of these integrations?",
+        "answers": {
+            "correct": "Increase in the attack surface",
+            "incorrect": ["Non-compliance with data sovereignty rules", "Loss of the vendor’s interoperability support", "Mandatory deployment of a SIEM solution"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security engineer is concerned that the strategy for detection on endpoints is too heavily dependent on previously defined attacks. The engineer would like a tool to monitor for changes to key files and network traffic on the device. Which of the following tools BEST addresses both detection and prevention?",
+        "answers": {
+            "correct": "HIPS",
+            "incorrect": ["NIDS", "AV", "NGFW"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following processes will eliminate data using a method that will allow the storage device to be reused after the process is complete?",
+        "answers": {
+            "correct": "Overwriting",
+            "incorrect": ["Pulverizing", "Shredding", "Degaussing"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A security analyst is receiving several alerts per user and is trying to determine if various logins are malicious. The security analyst would like to create a baseline of normal operations and reduce noise. Which of the following actions should the security analyst perform?",
+        "answers": {
+            "correct": "Utilize behavioral analysis to enable the SIEM’s learning mode",
+            "incorrect": ["Adjust the data flow from authentication sources to the SIEM", "Disable email alerting and review the SIEM directly", "Adjust the sensitivity levels of the SIEM correlation engine"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "During a recent security incident at a multinational corporation a security analyst found the following logs for an account caller user: Which of the following account policies would BEST prevent attackers from logging in as user?",
+        "answers": {
+            "correct": "Impossible travel time",
+            "incorrect": ["Geofencing", "Time-based logins", "Geolocation"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is working on mobile device security after a report revealed that users granted non-verified software access to corporate data. Which of the following is the MOST effective security control to mitigate this risk?",
+        "answers": {
+            "correct": "Block access to application stores",
+            "incorrect": ["Implement OTA updates", "Update the BYOD policy", "Deploy a uniform firmware"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following secure coding techniques makes compromised code more difficult for hackers to use?",
+        "answers": {
+            "correct": "Obfuscation",
+            "incorrect": ["Normalization", "Execution", "Reuse"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A company is implementing BYOD and wants to ensure all users have access to the same cloud-based services. Which of the following would BEST allow the company to meet this requirement?",
+        "answers": {
+            "correct": "SaaS",
+            "incorrect": ["IaaS", "PaaS", "MaaS"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "An organization is tuning SIEM rules based off of threat intelligence reports. Which of the following phases of the incident response process does this scenario represent?",
+        "answers": {
+            "correct": "Preparation",
+            "incorrect": ["Lessons learned", "Eradication", "Recovery"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is a risk that is specifically associated with hosting applications in the public cloud?",
+        "answers": {
+            "correct": "Shared tenancy",
+            "incorrect": ["Unsecured root accounts", "Zero-day", "Insider threat"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "A vulnerability has been discovered and a known patch to address the vulnerability does not exist. Which of the following controls work BEST until a proper fix is released?",
+        "answers": {
+            "correct": "Compensating",
+            "incorrect": ["Detective", "Deterrent", "Corrective"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following prevents an employee from seeing a colleague who is visiting an inappropriate website?",
+        "answers": {
+            "correct": "Separation of duties policy",
+            "incorrect": ["Job rotation policy", "NDA", "AUP"]
+        },
+        "Explanation": ""
+    },
+    {
+        "question": "Which of the following is an effective tool to stop or prevent the exfiltration of data from a network?",
+        "answers": {
+            "correct": "DLP",
+            "incorrect": ["NIDS", "TPM", "FDE"]
+        },
+        "Explanation": ""
+    }
+]

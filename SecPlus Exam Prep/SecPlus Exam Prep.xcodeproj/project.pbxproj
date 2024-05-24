@@ -15,6 +15,7 @@
 		BBFABB112C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB102C0147CD002E4CF6 /* SecPlus_Exam_PrepTests.swift */; };
 		BBFABB1B2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB1A2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift */; };
 		BBFABB1D2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB1C2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift */; };
+		BBFABB2A2C014B88002E4CF6 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = BBFABB292C014B88002E4CF6 /* questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BBFABB162C0147CD002E4CF6 /* SecPlus Exam PrepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecPlus Exam PrepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFABB1A2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepUITests.swift; sourceTree = "<group>"; };
 		BBFABB1C2C0147CD002E4CF6 /* SecPlus_Exam_PrepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBFABB292C014B88002E4CF6 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BBFABB022C0147CD002E4CF6 /* Assets.xcassets */,
 				BBFABB042C0147CD002E4CF6 /* SecPlus_Exam_Prep.entitlements */,
 				BBFABB052C0147CD002E4CF6 /* Preview Content */,
+				BBFABB292C014B88002E4CF6 /* questions.json */,
 			);
 			path = "SecPlus Exam Prep";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFABB2A2C014B88002E4CF6 /* questions.json in Resources */,
 				BBFABB072C0147CD002E4CF6 /* Preview Assets.xcassets in Resources */,
 				BBFABB032C0147CD002E4CF6 /* Assets.xcassets in Resources */,
 			);
