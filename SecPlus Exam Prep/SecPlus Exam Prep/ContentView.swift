@@ -70,6 +70,14 @@ struct ContentView: View {
     }
 }
 
+struct MagicButtonEffect: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+            .brightness(configuration.isPressed ? 0.1 : 0)
+    }
+}
+
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
