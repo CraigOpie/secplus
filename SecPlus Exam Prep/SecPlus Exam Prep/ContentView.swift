@@ -252,6 +252,21 @@ struct ContentView: View {
     }
 }
 
+struct ProgressBar: View {
+    var progress: Double
+
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                Rectangle().frame(height: 4).opacity(0.3).foregroundColor(Color.secondary)
+                Rectangle().frame(width: CGFloat(progress) * geometry.size.width, height: 4).foregroundColor(Color.primary)
+            }
+        }
+        .padding(.top, 10)
+        .frame(height: 4)
+    }
+}
+
 struct MagicButtonEffect: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
