@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB97476C2C014CB5003B760D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97476B2C014CB5003B760D /* Question.swift */; };
 		BBFABAFD2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */; };
 		BBFABAFF2C0147CC002E4CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */; };
 		BBFABB012C0147CC002E4CF6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB002C0147CC002E4CF6 /* Item.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB97476B2C014CB5003B760D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BBFABAF92C0147CC002E4CF6 /* SecPlus Exam Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SecPlus Exam Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepApp.swift; sourceTree = "<group>"; };
 		BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				BBFABB042C0147CD002E4CF6 /* SecPlus_Exam_Prep.entitlements */,
 				BBFABB052C0147CD002E4CF6 /* Preview Content */,
 				BBFABB292C014B88002E4CF6 /* questions.json */,
+				BB97476B2C014CB5003B760D /* Question.swift */,
 			);
 			path = "SecPlus Exam Prep";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFABAFF2C0147CC002E4CF6 /* ContentView.swift in Sources */,
+				BB97476C2C014CB5003B760D /* Question.swift in Sources */,
 				BBFABB012C0147CC002E4CF6 /* Item.swift in Sources */,
 				BBFABAFD2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift in Sources */,
 			);
