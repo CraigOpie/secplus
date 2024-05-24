@@ -8,6 +8,10 @@
 import SwiftUI
 import SwiftData
 
+enum QuizMode {
+    case study, exam
+}
+
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
@@ -178,6 +182,73 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: loadQuestions)
+    }
+    
+    func loadQuestions() {
+        if let url = Bundle.main.url(forResource: "questions", withExtension: "json"),
+           let data = try? Data(contentsOf: url) {
+            do {
+                let loadedQuestions = try JSONDecoder().decode([Question].self, from: data)
+                questions = loadedQuestions.shuffled()
+            } catch {
+                print("Error decoding questions: \(error)")
+            }
+        }
+    }
+
+    func buttonColor(for option: String) -> Color {
+        if hasCheckedAnswer {
+            if questions[currentQuestionIndex].answers.correct.contains(option) {
+                return Color.green.opacity(0.3)
+            } else if selectedAnswers.contains(option) {
+                return Color.red.opacity(0.3)
+            }
+        }
+        return selectedAnswers.contains(option) ? Color.blue : Color.gray.opacity(0.3)
+    }
+
+    func correctBorder(for option: String) -> some View {
+        if hasCheckedAnswer && questions[currentQuestionIndex].answers.correct.contains(option) {
+            return RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.green, lineWidth: 3)
+        }
+        return RoundedRectangle(cornerRadius: 0).stroke(Color.clear)
+    }
+
+    func shouldBlur(option: String) -> Bool {
+        return hasCheckedAnswer && mode == .study && !questions[currentQuestionIndex].answers.correct.contains(option)
+    }
+
+    func checkAnswer() {
+        if mode == .study {
+            hasCheckedAnswer = true
+        } else {
+            moveToNextQuestion()
+        }
+    }
+
+    func moveToNextQuestion() {
+        withAnimation {
+            if questions[currentQuestionIndex].isCorrectAnswer(Array(selectedAnswers)) {
+                correctAnswers += 1
+            }
+            if currentQuestionIndex < questions.count - 1 {
+                currentQuestionIndex += 1
+                selectedAnswers.removeAll()
+                hasCheckedAnswer = false
+            } else {
+                showResult = true
+            }
+        }
+    }
+
+    func retryQuiz() {
+        currentQuestionIndex = 0
+        correctAnswers = 0
+        selectedAnswers = []
+        hasCheckedAnswer = false
+        showResult = false
+        loadQuestions()
     }
 }
 
