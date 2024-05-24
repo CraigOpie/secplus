@@ -38,7 +38,7 @@ struct ContentView: View {
     
     var menuView: some View {
         VStack(spacing: 30) {
-            Text("SecPlus Practice Exam")
+            Text("Security+ Practice Exam")
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .padding(.top, 50)
@@ -182,6 +182,7 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: loadQuestions)
+        .frame(minWidth: 800, minHeight: 600)
     }
     
     func maxWidth() -> CGFloat {
