@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BB97476C2C014CB5003B760D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97476B2C014CB5003B760D /* Question.swift */; };
+		BB97476E2C015A18003B760D /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = BB97476D2C015A18003B760D /* Icon */; };
+		BB9747712C015A5F003B760D /* Splashscreen in Resources */ = {isa = PBXBuildFile; fileRef = BB97476F2C015A5F003B760D /* Splashscreen */; };
+		BB97478F2C015A96003B760D /* LaunchImages in Resources */ = {isa = PBXBuildFile; fileRef = BB97478E2C015A96003B760D /* LaunchImages */; };
+		BB9747912C015B49003B760D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9747902C015B49003B760D /* LaunchScreen.storyboard */; };
 		BBFABAFD2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */; };
 		BBFABAFF2C0147CC002E4CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */; };
 		BBFABB012C0147CC002E4CF6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABB002C0147CC002E4CF6 /* Item.swift */; };
@@ -38,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		BB97476B2C014CB5003B760D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BB97476D2C015A18003B760D /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icon; sourceTree = "<group>"; };
+		BB97476F2C015A5F003B760D /* Splashscreen */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Splashscreen; sourceTree = "<group>"; };
+		BB97478E2C015A96003B760D /* LaunchImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LaunchImages; path = ../../../LaunchImages; sourceTree = "<group>"; };
+		BB9747902C015B49003B760D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBFABAF92C0147CC002E4CF6 /* SecPlus Exam Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SecPlus Exam Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecPlus_Exam_PrepApp.swift; sourceTree = "<group>"; };
 		BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,7 +109,11 @@
 		BBFABAFB2C0147CC002E4CF6 /* SecPlus Exam Prep */ = {
 			isa = PBXGroup;
 			children = (
+				BB97476D2C015A18003B760D /* Icon */,
+				BB97478E2C015A96003B760D /* LaunchImages */,
+				BB97476F2C015A5F003B760D /* Splashscreen */,
 				BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */,
+				BB9747902C015B49003B760D /* LaunchScreen.storyboard */,
 				BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */,
 				BBFABB002C0147CC002E4CF6 /* Item.swift */,
 				BBFABB022C0147CD002E4CF6 /* Assets.xcassets */,
@@ -243,8 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFABB2A2C014B88002E4CF6 /* questions.json in Resources */,
+				BB9747712C015A5F003B760D /* Splashscreen in Resources */,
+				BB97476E2C015A18003B760D /* Icon in Resources */,
 				BBFABB072C0147CD002E4CF6 /* Preview Assets.xcassets in Resources */,
+				BB9747912C015B49003B760D /* LaunchScreen.storyboard in Resources */,
 				BBFABB032C0147CD002E4CF6 /* Assets.xcassets in Resources */,
+				BB97478F2C015A96003B760D /* LaunchImages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "SecPlus Exam Prep/SecPlus_Exam_Prep.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SecPlus Exam Prep/Preview Content\"";
@@ -436,12 +454,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SecPlus Exam Prep";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -466,7 +487,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "SecPlus Exam Prep/SecPlus_Exam_Prep.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SecPlus Exam Prep/Preview Content\"";
@@ -474,12 +497,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SecPlus Exam Prep";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
