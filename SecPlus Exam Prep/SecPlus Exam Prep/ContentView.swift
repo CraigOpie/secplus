@@ -130,34 +130,50 @@ struct ContentView: View {
             }
 
             if !questions.isEmpty {
-                Text(questions[currentQuestionIndex].question)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.primary)
-
-                ForEach(questions[currentQuestionIndex].allOptions, id: \.self) { option in
-                    Button(action: {
-                        if !hasCheckedAnswer {
-                            if selectedAnswers.contains(option) {
-                                selectedAnswers.remove(option)
-                            } else {
-                                selectedAnswers.insert(option)
-                            }
-                        }
-                    }) {
-                        Text(option)
-                            .frame(maxWidth: .infinity)
+                GeometryReader { geometry in
+                    ScrollView {
+                        Text(questions[currentQuestionIndex].question)
+                            .font(.system(size: min(geometry.size.width * 0.05, 20)))
                             .padding()
-                            .background(buttonColor(for: option))
-                            .foregroundColor(.primary)
-                            .overlay(correctBorder(for: option))
+                            .background(Color.gray.opacity(0.1))
                             .cornerRadius(10)
-                            .blur(radius: shouldBlur(option: option) ? 5 : 0)
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.primary)
+                            .minimumScaleFactor(0.5)
+                            .lineLimit(nil)
                     }
-                    .buttonStyle(MagicButtonEffect())
+                    .frame(height: geometry.size.height * 0.95)
                 }
+
+                ScrollView {
+                    VStack(spacing: 10) {
+                        ForEach(questions[currentQuestionIndex].allOptions, id: \.self) { option in
+                            Button(action: {
+                                if !hasCheckedAnswer {
+                                    if selectedAnswers.contains(option) {
+                                        selectedAnswers.remove(option)
+                                    } else {
+                                        selectedAnswers.insert(option)
+                                    }
+                                }
+                            }) {
+                                Text(option)
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(buttonColor(for: option))
+                                    .foregroundColor(.primary)
+                                    .overlay(correctBorder(for: option))
+                                    .cornerRadius(10)
+                                    .blur(radius: shouldBlur(option: option) ? 5 : 0)
+                                    .minimumScaleFactor(0.5)
+                                    .lineLimit(nil)
+                            }
+                            .buttonStyle(MagicButtonEffect())
+                        }
+                    }
+                }
+                .scrollIndicators(.visible)
+
 
                 Spacer()
 
@@ -174,6 +190,8 @@ struct ContentView: View {
                         .background(!selectedAnswers.isEmpty ? Color.green : Color.gray)
                         .foregroundColor(.primary)
                         .cornerRadius(10)
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(nil)
                 }
                 .buttonStyle(MagicButtonEffect())
                 .disabled(selectedAnswers.isEmpty)
@@ -182,7 +200,6 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: loadQuestions)
-        .frame(minWidth: 800, minHeight: 600)
     }
     
     func maxWidth() -> CGFloat {
