@@ -446,7 +446,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SecPlus Exam Prep/SecPlus_Exam_Prep.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"SecPlus Exam Prep/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DP9AS8UQK;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -491,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = "SecPlus Exam Prep/SecPlus_Exam_Prep.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"SecPlus Exam Prep/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DP9AS8UQK;
 				ENABLE_HARDENED_RUNTIME = YES;
