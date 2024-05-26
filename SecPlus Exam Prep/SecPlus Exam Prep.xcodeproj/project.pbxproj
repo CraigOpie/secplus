@@ -10,7 +10,6 @@
 		BB97476C2C014CB5003B760D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97476B2C014CB5003B760D /* Question.swift */; };
 		BB97476E2C015A18003B760D /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = BB97476D2C015A18003B760D /* Icon */; };
 		BB9747712C015A5F003B760D /* Splashscreen in Resources */ = {isa = PBXBuildFile; fileRef = BB97476F2C015A5F003B760D /* Splashscreen */; };
-		BB97478F2C015A96003B760D /* LaunchImages in Resources */ = {isa = PBXBuildFile; fileRef = BB97478E2C015A96003B760D /* LaunchImages */; };
 		BB9747912C015B49003B760D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9747902C015B49003B760D /* LaunchScreen.storyboard */; };
 		BBFABAFD2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFC2C0147CC002E4CF6 /* SecPlus_Exam_PrepApp.swift */; };
 		BBFABAFF2C0147CC002E4CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFABAFE2C0147CC002E4CF6 /* ContentView.swift */; };
@@ -260,7 +259,6 @@
 				BBFABB072C0147CD002E4CF6 /* Preview Assets.xcassets in Resources */,
 				BB9747912C015B49003B760D /* LaunchScreen.storyboard in Resources */,
 				BBFABB032C0147CD002E4CF6 /* Assets.xcassets in Resources */,
-				BB97478F2C015A96003B760D /* LaunchImages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
